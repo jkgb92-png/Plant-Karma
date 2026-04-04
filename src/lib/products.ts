@@ -69,7 +69,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
-    gradient: "from-green-700 to-lime-500",
+    gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
     shortDescription:
       "The Queen of Herbs — a revered adaptogen for body, mind, and spirit.",
@@ -507,7 +507,7 @@ export const products: Product[] = [
     unit: "4 oz fresh bundle",
     image:
       "https://images.unsplash.com/photo-1574173229935-c5cf60daa16b?w=600&auto=format&fit=crop&q=80",
-    gradient: "from-green-700 to-lime-500",
+    gradient: "from-emerald-700 to-lime-500",
     emoji: "🧄",
     shortDescription:
       "Spring's most anticipated wild green — bold, garlicky, and fleeting.",
