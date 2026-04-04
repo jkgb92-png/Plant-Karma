@@ -708,7 +708,7 @@ export const products: Product[] = [
       "Rutin and quercetin in yaupon leaves support vascular integrity and reduce inflammatory markers.",
     ],
     howToUse:
-      "Steep 1–2 tsp dried leaves in hot (not boiling) water for 5–7 minutes. Can be drunk plain, with honey, or blended with spices like cinnamon and cardamom. Pairs beautifully with dried fruit as a morning or afternoon beverage.",
+      "Steep 1–2 tsp dried leaves in hot water (175–185°F / 80–85°C, just off the boil) for 5–7 minutes. Can be drunk plain, with honey, or blended with spices like cinnamon and cardamom. Pairs beautifully with dried fruit as a morning or afternoon beverage.",
     inStock: false,
     featured: false,
     rating: 4.7,
