@@ -15,8 +15,13 @@ export async function generateStaticParams() {
   return products.map((p) => ({ id: p.id }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const product = getProductById(params.id);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const product = getProductById(id);
   if (!product) return { title: "Product Not Found | Plant Karma" };
   return {
     title: `${product.name} | Plant Karma`,
@@ -31,12 +36,13 @@ const tabDefs = [
   { id: "howtouse", label: "How to Use", emoji: "🫖" },
 ];
 
-export default function ProductDetailPage({
+export default async function ProductDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const product = getProductById(params.id);
+  const { id } = await params;
+  const product = getProductById(id);
   if (!product) notFound();
 
   const meta = categoryMeta[product.category];
