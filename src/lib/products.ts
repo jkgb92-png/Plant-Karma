@@ -534,6 +534,187 @@ export const products: Product[] = [
     reviews: 112,
     origin: "Appalachian forest wild-harvest",
   },
+  // ── FLORIDA NATIVES ────────────────────────────────────
+  {
+    id: "elderberry",
+    name: "Elderberry",
+    scientificName: "Sambucus canadensis",
+    category: "herb",
+    price: 15.99,
+    unit: "2 oz dried berry",
+    image:
+      "https://images.unsplash.com/photo-1595511890410-3b8dc237a537?w=600&auto=format&fit=crop&q=80",
+    gradient: "from-purple-800 to-violet-600",
+    emoji: "🫐",
+    shortDescription:
+      "Florida's immune-boosting native berry — centuries of folk medicine in every cluster.",
+    description:
+      "American Elderberry (Sambucus canadensis) is one of Florida's most celebrated native medicinal shrubs, found growing wild along stream banks, forest edges, and low-lying wetlands across the state. Every part of this generous plant — flowers, berries, bark, and leaves — has been used by Indigenous peoples of the Southeast for food, medicine, and ceremony for thousands of years. The deep purple berries ripen in late summer and are packed with anthocyanins and immune-active polysaccharides. Our elderberries are sustainably wild-harvested from Florida woodlands, gently dried to preserve bioactive compounds, and never treated with sulfites or preservatives.",
+    spiritualUses: [
+      "Known as the 'Elder Mother' in European and Southeastern folk traditions — a spirit guardian of the plant world.",
+      "Hung above doorways and windows as a protective charm to ward off illness and negative energy from the home.",
+      "Used in ancestral veneration rituals — elderberry wine or syrup offered to honor those who have passed.",
+      "Burned as an incense or placed on altars to invite wisdom, healing, and the support of elder spirits.",
+    ],
+    scientificBenefits: [
+      "Rich in anthocyanins (cyanidin-3-glucoside) that neutralize free radicals and reduce systemic inflammation.",
+      "Randomized controlled trials show elderberry extract significantly shortens influenza duration and severity.",
+      "Flavonoids bind to and block influenza virus surface proteins, inhibiting cellular entry in laboratory studies.",
+      "High vitamin C content (up to 60% DV per serving) supports collagen synthesis and immune cell function.",
+      "Quercetin and rutin in elderberry support cardiovascular health by strengthening capillary walls.",
+    ],
+    howToUse:
+      "Simmer dried berries into a syrup with raw honey and ginger. Take 1 tbsp daily for immune support, or 1 tbsp every 2–3 hours at first sign of illness. Always cook elderberries — raw berries may cause nausea.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 84,
+    origin: "Florida woodland wild-harvest",
+  },
+  {
+    id: "saw-palmetto",
+    name: "Saw Palmetto",
+    scientificName: "Serenoa repens",
+    category: "herb",
+    price: 17.99,
+    unit: "2 oz dried berry",
+    image:
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&auto=format&fit=crop&q=80",
+    gradient: "from-green-800 to-teal-600",
+    emoji: "🌴",
+    shortDescription:
+      "Florida's iconic palm — a powerhouse berry for hormonal and urinary health.",
+    description:
+      "Saw Palmetto (Serenoa repens) is as Floridian as the scrub pine flatwoods it dominates — a slow-growing, fire-adapted palm found almost exclusively in Florida and the Gulf Coast states. The Seminole and Timucua peoples ate the berries as a staple food and used them medicinally for centuries. Today, saw palmetto is one of the most widely studied botanicals in the world, with hundreds of clinical trials examining its effects on prostate health and hormone balance. Our berries are hand-harvested during the brief late-summer ripening window, shade-dried at low temperature, and ground fresh to order.",
+    spiritualUses: [
+      "Carried by warriors and hunters in Seminole tradition for strength, protection, and sharpened instincts.",
+      "Used in boundary-setting and protection work in Southern folk magic — hung at property lines to guard the home.",
+      "Associated with masculine vitality and the warrior archetype in plant spirit traditions of the Southeast.",
+      "Burned as a smudge to clear stagnant energy and restore assertiveness and personal power.",
+    ],
+    scientificBenefits: [
+      "Fatty acids (lauric, oleic, myristic) inhibit 5-alpha-reductase, reducing conversion of testosterone to DHT.",
+      "Multiple meta-analyses show significant improvement in urinary flow rate and symptoms of benign prostatic hyperplasia.",
+      "Anti-inflammatory phytosterols reduce prostaglandin-driven inflammation in prostate and bladder tissue.",
+      "Demonstrated efficacy comparable to finasteride for mild-to-moderate BPH with far fewer side effects.",
+      "Emerging research suggests hair-loss reduction via the same 5-alpha-reductase inhibition pathway.",
+    ],
+    howToUse:
+      "Take 160–320 mg of concentrated berry extract twice daily with food, or brew 1 tsp dried berry powder as a tea. Results for prostate support typically appear after 4–8 weeks of consistent use.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 67,
+    origin: "Florida scrubland wild-harvest",
+  },
+  {
+    id: "passionflower",
+    name: "Passionflower (Maypop)",
+    scientificName: "Passiflora incarnata",
+    category: "herb",
+    price: 13.99,
+    unit: "1.5 oz dried leaf & flower",
+    image:
+      "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=80",
+    gradient: "from-violet-700 to-purple-500",
+    emoji: "🌸",
+    shortDescription:
+      "Florida's wild anxiety remedy — stunning blossoms with deep calming power.",
+    description:
+      "Passionflower — called Maypop in the South for the popping sound its hollow fruit makes when stepped on — is one of Florida's most striking and medicinally potent native vines. Found scrambling across roadsides, fences, and woodland edges throughout the state, its extraordinarily complex blooms were used by Spanish missionaries as a teaching tool for the Passion of Christ, giving the plant its evocative name. The Cherokees, Creeks, and other Southeastern nations used the root and leaf for anxiety, insomnia, and as a gentle sedative. We harvest leaves and flowers at peak bloom from undisturbed Florida habitat.",
+    spiritualUses: [
+      "Worn or carried as a talisman to bring peace, dissolve conflict, and soften difficult relationships.",
+      "Burned or placed on the altar before dream work to invite prophetic and lucid dreaming.",
+      "Associated with the Passion of Christ in Christian folk magic — used in devotional practices and protection from suffering.",
+      "Given as a gift or used in love magic to calm a troubled partnership and encourage forgiveness.",
+    ],
+    scientificBenefits: [
+      "Chrysin and vitexin bind to GABA-A receptors with benzodiazepine-like affinity, reducing anxiety without dependence.",
+      "Clinical trial comparing passionflower to oxazepam found equivalent anxiety reduction with significantly fewer side effects.",
+      "Improves sleep quality by extending total sleep time and increasing deep-wave (slow-wave) sleep.",
+      "Flavonoid content shows anti-inflammatory action comparable to low-dose NSAIDs in animal studies.",
+      "Mild MAO-inhibiting alkaloids contribute to mood elevation and emotional resilience.",
+    ],
+    howToUse:
+      "Steep 1–2 tsp dried leaf and flower in hot water for 10 minutes. Drink one cup 30–60 minutes before bed for sleep support, or sip throughout the day to ease anxiety. Blend with lemon balm for a powerful calming tea.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 53,
+    origin: "Florida roadside & forest edge wild-harvest",
+  },
+  {
+    id: "beautyberry",
+    name: "American Beautyberry",
+    scientificName: "Callicarpa americana",
+    category: "herb",
+    price: 11.99,
+    unit: "1 oz dried leaf & berry",
+    image:
+      "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?w=600&auto=format&fit=crop&q=80",
+    gradient: "from-fuchsia-700 to-purple-500",
+    emoji: "🍇",
+    shortDescription:
+      "Florida's dazzling purple native — a bug-repelling, jelly-making woodland gem.",
+    description:
+      "American Beautyberry (Callicarpa americana) is one of the most visually spectacular native shrubs in Florida's understory — in late summer and fall, its branches erupt in tight clusters of iridescent magenta-purple berries that look almost too vivid to be real. Found throughout Florida's woodlands, hammocks, and forest margins, it has long been used by Southeastern Indigenous peoples and early settlers both for its tart berries (made into jellies and wines) and its potent insect-repelling leaves. Recent USDA research has validated that beautyberry's repellent compounds outperform many synthetic alternatives. Our beautyberry is hand-harvested from wild Florida stands at peak ripeness.",
+    spiritualUses: [
+      "The vivid purple color associates beautyberry with intuition, psychic protection, and the third eye in color magic.",
+      "Planted at the boundaries of a garden or property to mark sacred space and welcome nature spirits.",
+      "Berries used as offerings on altars honoring the forest — their jewel-like beauty seen as a gift from the land.",
+      "Worn or carried in sachets to enhance attractiveness, confidence, and magnetic personal presence.",
+    ],
+    scientificBenefits: [
+      "USDA Agricultural Research Service confirmed callicarpenal and intermedeol in beautyberry leaves repel mosquitoes, ticks, and fire ants.",
+      "Repellent efficacy in trials comparable to DEET at equivalent concentrations, with no known toxicity.",
+      "Berry extracts demonstrate antimicrobial activity against Staphylococcus aureus and E. coli in laboratory assays.",
+      "Callicarpa flavonoids show anti-inflammatory activity by inhibiting COX-1 and COX-2 enzyme pathways.",
+      "Historically used topically in folk medicine as a treatment for skin irritations, rashes, and minor wounds.",
+    ],
+    howToUse:
+      "Steep dried leaves as a tea to drink or use as a topical skin rinse. Rub fresh or dried leaves on exposed skin as a natural insect repellent. Simmer berries with sugar to make a tart beautyberry jelly.",
+    inStock: false,
+    featured: false,
+    rating: 4.6,
+    reviews: 31,
+    origin: "Florida woodland wild-harvest",
+  },
+  {
+    id: "yaupon-holly",
+    name: "Yaupon Holly",
+    scientificName: "Ilex vomitoria",
+    category: "herb",
+    price: 14.99,
+    unit: "1.5 oz dried leaf",
+    image:
+      "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
+    gradient: "from-emerald-800 to-green-500",
+    emoji: "☕",
+    shortDescription:
+      "North America's only native caffeinated plant — a forgotten indigenous tea.",
+    description:
+      "Yaupon Holly (Ilex vomitoria) holds a remarkable and largely forgotten distinction: it is the only plant native to North America that naturally contains caffeine. Found growing abundantly in Florida's coastal scrub, sandy flatwoods, and maritime hammocks, yaupon was the ceremonial 'Black Drink' of the Mississippian cultures — consumed in purification rituals by warriors and leaders across the Southeast for centuries. The notoriously off-putting scientific name (vomitoria) was bestowed by European botanists who witnessed the ritual emetic use of large concentrated doses — regular tea-strength brews are smooth, slightly earthy, and gentle on the stomach. Yaupon also contains theobromine (the compound in chocolate) and chlorogenic acid, making it a more complex and balanced stimulant than coffee. Ours is harvested from wild Florida shrubs, lightly roasted to develop flavor complexity.",
+    spiritualUses: [
+      "The ceremonial Black Drink of Southeastern Indigenous nations — consumed before councils, hunts, and battle to purify body and mind.",
+      "Used in vision-seeking practices to sharpen perception, clear mental fog, and open awareness before ceremony.",
+      "Offering it to guests was a gesture of respect and spiritual welcome in traditional Southeastern cultures.",
+      "Associated with clarity, truth-speaking, and the sacred act of beginning — drunk at dawn or before important decisions.",
+    ],
+    scientificBenefits: [
+      "Contains caffeine (~50mg per cup), theobromine, and theophylline — a smoother, more sustained stimulant profile than coffee.",
+      "Rich in chlorogenic acid — the same antioxidant in coffee linked to reduced risk of type 2 diabetes and metabolic disease.",
+      "Theobromine provides gentle cardiovascular stimulation with less blood pressure impact than caffeine alone.",
+      "Low tannin content means no bitter aftertaste and no interference with iron absorption — gentler than black tea.",
+      "Rutin and quercetin in yaupon leaves support vascular integrity and reduce inflammatory markers.",
+    ],
+    howToUse:
+      "Steep 1–2 tsp dried leaves in hot water (175–185°F / 80–85°C, just off the boil) for 5–7 minutes. Can be drunk plain, with honey, or blended with spices like cinnamon and cardamom. Pairs beautifully with dried fruit as a morning or afternoon beverage.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 45,
+    origin: "Florida coastal scrub wild-harvest",
+  },
   {
     id: "lambs-quarters",
     name: "Lamb's Quarters",
