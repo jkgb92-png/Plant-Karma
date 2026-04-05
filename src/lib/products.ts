@@ -1,4 +1,4 @@
-export type Category = "herb" | "nut" | "weed" | "vegetable";
+export type Category = "herb" | "nut" | "weed" | "vegetable" | "fruit";
 
 export interface Product {
   id: string;
@@ -8,6 +8,7 @@ export interface Product {
   price: number;
   unit: string;
   image: string;
+  imageAlt: string;
   gradient: string; // fallback gradient when image doesn't load
   emoji: string;
   tagline: string; // short poetic 6–10 word hook
@@ -22,6 +23,7 @@ export interface Product {
   rating: number;
   reviews: number;
   origin: string;
+  regions: string[]; // US regions where this plant grows natively or is cultivated
 }
 
 export const products: Product[] = [
@@ -35,6 +37,7 @@ export const products: Product[] = [
     unit: "2 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Fresh green moringa leaves on branch",
     gradient: "from-emerald-700 to-emerald-500",
     emoji: "🌿",
     tagline: "Ancient wisdom packed into every miraculous leaf.",
@@ -66,6 +69,7 @@ export const products: Product[] = [
     rating: 4.9,
     reviews: 128,
     origin: "Local Pacific Northwest farms",
+    regions: ["Pacific Northwest", "West Coast", "Southeast"],
   },
   {
     id: "tulsi",
@@ -76,6 +80,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Holy basil tulsi plant with purple-green leaves",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
     tagline: "The incomparable queen of herbs and holy devotion.",
@@ -107,6 +112,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 97,
     origin: "Pacific Northwest greenhouse grown",
+    regions: ["Pacific Northwest", "West Coast", "Southeast"],
   },
   {
     id: "rosemary",
@@ -117,6 +123,7 @@ export const products: Product[] = [
     unit: "1 oz dried sprig",
     image:
       "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Wild rosemary sprigs with needle-like aromatic leaves",
     gradient: "from-teal-700 to-emerald-500",
     emoji: "🌾",
     tagline: "Memory, protection, and forest-edge fragrance distilled.",
@@ -148,6 +155,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 74,
     origin: "Local hillside wild harvest",
+    regions: ["Pacific Northwest", "West Coast", "Southwest"],
   },
   {
     id: "lemon-balm",
@@ -158,6 +166,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Lemon balm bright green leaves with citrus fragrance",
     gradient: "from-lime-600 to-yellow-400",
     emoji: "🍋",
     tagline: "Sunshine in leaf form — calm, bright, and restorative.",
@@ -189,6 +198,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 61,
     origin: "Home garden & local wildcrafted",
+    regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
   },
   {
     id: "mullein",
@@ -199,6 +209,7 @@ export const products: Product[] = [
     unit: "1 oz dried leaf & flower",
     image:
       "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Towering mullein stalk with velvety silver-green leaves in a meadow",
     gradient: "from-yellow-600 to-amber-500",
     emoji: "🌻",
     tagline: "A torch-bearer of the old world, healer of lungs.",
@@ -230,6 +241,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 43,
     origin: "Local meadow wildcrafted",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
   },
 
   // ── NUTS ───────────────────────────────────────────────
@@ -242,6 +254,7 @@ export const products: Product[] = [
     unit: "4 oz whole shells",
     image:
       "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Dried soap nut shells in a wooden bowl",
     gradient: "from-amber-700 to-orange-500",
     emoji: "🫧",
     tagline: "Zero-waste suds from the tree of a thousand uses.",
@@ -273,6 +286,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 156,
     origin: "Pacific Northwest / Himalayan import",
+    regions: ["Pacific Northwest", "West Coast"],
   },
   {
     id: "black-walnuts",
@@ -283,6 +297,7 @@ export const products: Product[] = [
     unit: "3 oz shelled halves",
     image:
       "https://images.unsplash.com/photo-1508674861872-a51e06c50c9b?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Black walnuts in their green hulls on a forest floor",
     gradient: "from-stone-700 to-amber-600",
     emoji: "🌰",
     tagline: "Dark, bold, and wild — Appalachian forest medicine.",
@@ -314,6 +329,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 52,
     origin: "Local Appalachian wild-harvest",
+    regions: ["Midwest", "Southeast", "Northeast"],
   },
   {
     id: "hickory-nuts",
@@ -324,6 +340,7 @@ export const products: Product[] = [
     unit: "3 oz shelled pieces",
     image:
       "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Shagbark hickory nuts with thick ridged shells in autumn leaves",
     gradient: "from-yellow-700 to-amber-500",
     emoji: "🍂",
     tagline: "Buttery autumn treasure — the forest's forgotten feast.",
@@ -355,6 +372,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 38,
     origin: "Eastern Woodlands local harvest",
+    regions: ["Midwest", "Southeast", "Northeast"],
   },
 
   // ── WILD WEEDS ─────────────────────────────────────────
@@ -367,6 +385,7 @@ export const products: Product[] = [
     unit: "2 oz dried blend",
     image:
       "https://images.unsplash.com/photo-1531217040651-e7a8f6bde316?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Dandelion seed head in a sunny meadow ready to release seeds",
     gradient: "from-yellow-500 to-green-500",
     emoji: "🌼",
     tagline: "Make a wish — the humble weed that heals everything.",
@@ -398,6 +417,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 89,
     origin: "Local wild meadows (pesticide-free)",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
   },
   {
     id: "stinging-nettle",
@@ -408,6 +428,7 @@ export const products: Product[] = [
     unit: "2 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Stinging nettle plant with serrated leaves in spring growth",
     gradient: "from-green-600 to-emerald-400",
     emoji: "🌿",
     tagline: "The sting fades; only deep nourishment remains.",
@@ -439,6 +460,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 76,
     origin: "Pacific Northwest streamside wildcrafted",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
   },
   {
     id: "chickweed",
@@ -449,6 +471,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried herb",
     image:
       "https://images.unsplash.com/photo-1500622944204-b135684e99fd?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Chickweed tiny star-shaped white flowers among green leaves",
     gradient: "from-lime-500 to-emerald-400",
     emoji: "⭐",
     tagline: "Cool, star-bright, and quietly healing your skin.",
@@ -480,6 +503,7 @@ export const products: Product[] = [
     rating: 4.4,
     reviews: 31,
     origin: "Local garden wildcrafted (spring harvest)",
+    regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast", "Southeast"],
   },
   {
     id: "purslane",
@@ -490,6 +514,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Purslane succulent green leaves with thick fleshy stems",
     gradient: "from-green-500 to-teal-400",
     emoji: "💚",
     tagline: "Omega-3 riches growing wild beneath your feet.",
@@ -521,6 +546,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 48,
     origin: "Local summer wild harvest",
+    regions: ["Southwest", "Great Plains", "Midwest", "Southeast", "Northeast"],
   },
 
   // ── VEGETABLES ─────────────────────────────────────────
@@ -533,6 +559,7 @@ export const products: Product[] = [
     unit: "1 lb fresh tubers",
     image:
       "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Jerusalem artichoke sunchoke tubers harvested from garden",
     gradient: "from-orange-600 to-yellow-500",
     emoji: "🌻",
     tagline: "The sunflower's hidden gift — sweet, earthy, transformative.",
@@ -564,6 +591,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 67,
     origin: "Local organic farm",
+    regions: ["Midwest", "Great Plains", "Southeast", "Northeast"],
   },
   {
     id: "wild-ramps",
@@ -574,6 +602,7 @@ export const products: Product[] = [
     unit: "4 oz fresh bundle",
     image:
       "https://images.unsplash.com/photo-1574173229935-c5cf60daa16b?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Wild ramps with broad green leaves and slender white bulbs in forest",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🧄",
     tagline: "Spring's first forest whisper — bold and fleeting.",
@@ -605,6 +634,7 @@ export const products: Product[] = [
     rating: 4.9,
     reviews: 112,
     origin: "Appalachian forest wild-harvest",
+    regions: ["Midwest", "Northeast", "Southeast"],
   },
   // ── FLORIDA NATIVES ────────────────────────────────────
   {
@@ -616,6 +646,7 @@ export const products: Product[] = [
     unit: "2 oz dried berry",
     image:
       "https://images.unsplash.com/photo-1595511890410-3b8dc237a537?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Clusters of deep purple elderberries on arching branches",
     gradient: "from-purple-800 to-violet-600",
     emoji: "🫐",
     tagline: "Elder Mother's berries — immunity forged from the wild.",
@@ -647,6 +678,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 84,
     origin: "Florida woodland wild-harvest",
+    regions: ["Southeast", "Midwest", "Northeast"],
   },
   {
     id: "saw-palmetto",
@@ -657,6 +689,7 @@ export const products: Product[] = [
     unit: "2 oz dried berry",
     image:
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Saw palmetto palm fronds in Florida scrubland",
     gradient: "from-green-800 to-teal-600",
     emoji: "🌴",
     tagline: "Florida's iconic palm — where strength meets stillness.",
@@ -688,6 +721,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 67,
     origin: "Florida scrubland wild-harvest",
+    regions: ["Southeast"],
   },
   {
     id: "passionflower",
@@ -698,6 +732,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf & flower",
     image:
       "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Passionflower intricate purple and white bloom on vine",
     gradient: "from-violet-700 to-purple-500",
     emoji: "🌸",
     tagline: "Nature's most beautiful anxiety remedy in full bloom.",
@@ -729,6 +764,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 53,
     origin: "Florida roadside & forest edge wild-harvest",
+    regions: ["Southeast", "Midwest", "Northeast"],
   },
   {
     id: "beautyberry",
@@ -739,6 +775,7 @@ export const products: Product[] = [
     unit: "1 oz dried leaf & berry",
     image:
       "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "American beautyberry vivid magenta-purple berries on arching branch",
     gradient: "from-fuchsia-700 to-purple-500",
     emoji: "🍇",
     tagline: "Iridescent jewels that repel bugs and captivate souls.",
@@ -770,9 +807,8 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 31,
     origin: "Florida woodland wild-harvest",
+    regions: ["Southeast"],
   },
-  {
-    id: "yaupon-holly",
     name: "Yaupon Holly",
     scientificName: "Ilex vomitoria",
     category: "herb",
@@ -780,6 +816,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Yaupon holly dark green leaves with small red berries",
     gradient: "from-emerald-800 to-green-500",
     emoji: "☕",
     tagline: "America's forgotten caffeine — smoother than coffee.",
@@ -811,6 +848,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 45,
     origin: "Florida coastal scrub wild-harvest",
+    regions: ["Southeast"],
   },
   {
     id: "lambs-quarters",
@@ -821,6 +859,7 @@ export const products: Product[] = [
     unit: "1.5 oz dried leaf",
     image:
       "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Lamb's quarters pale green leaves with white powdery coating",
     gradient: "from-teal-600 to-green-500",
     emoji: "🥬",
     tagline: "The garden weed that outshines every cultivated green.",
@@ -852,8 +891,10 @@ export const products: Product[] = [
     rating: 4.4,
     reviews: 29,
     origin: "Local organic garden / wildcrafted",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
   },
-];
+
+  // ── ADDITIONAL WILD WEEDS ──────────────────────────────
 
 export const featuredProducts = products.filter((p) => p.featured);
 
