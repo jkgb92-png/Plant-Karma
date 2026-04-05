@@ -76,7 +76,7 @@ function ShopContent() {
 
         {/* Hero content */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <nav className="text-sm text-sage/70 mb-3">
+          <nav className="text-sm text-white/60 mb-3">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-white">Shop</span>

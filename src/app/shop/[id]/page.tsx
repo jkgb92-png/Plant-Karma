@@ -115,7 +115,7 @@ export default async function ProductDetailPage({
             {/* Botanical stat ribbon */}
             <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
               {[
-                { icon: "📍", label: "Origin", value: product.origin.split(" ").slice(0, 3).join(" ") },
+                { icon: "📍", label: "Origin", value: product.origin },
                 { icon: meta.emoji, label: "Category", value: meta.label },
                 { icon: "⭐", label: "Rating", value: `${product.rating.toFixed(1)} (${product.reviews})` },
                 { icon: "📦", label: "Unit", value: product.unit },
@@ -127,7 +127,7 @@ export default async function ProductDetailPage({
                 >
                   <span className="text-lg">{icon}</span>
                   <span className="text-[10px] font-semibold text-stone-400 uppercase tracking-wide">{label}</span>
-                  <span className="text-xs text-stone-700 font-medium leading-tight">{value}</span>
+                  <span className="text-xs text-stone-700 font-medium leading-tight line-clamp-2 w-full">{value}</span>
                 </div>
               ))}
             </div>

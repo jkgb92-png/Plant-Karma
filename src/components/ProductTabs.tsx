@@ -33,12 +33,15 @@ export default function ProductTabs({
     .map((s) => s.trim())
     .filter(Boolean);
 
-  // Split description: first sentence becomes the pull-quote
-  const firstPeriod = description.indexOf(". ");
+  // Split description: first sentence (up to ". ") becomes the pull-quote
+  const splitMarker = ". ";
+  const firstPeriodIdx = description.indexOf(splitMarker);
   const pullQuote =
-    firstPeriod > 0 ? description.slice(0, firstPeriod + 1) : "";
+    firstPeriodIdx > 0 ? description.slice(0, firstPeriodIdx + 1) : "";
   const restDescription =
-    firstPeriod > 0 ? description.slice(firstPeriod + 2) : description;
+    firstPeriodIdx > 0
+      ? description.slice(firstPeriodIdx + splitMarker.length)
+      : description;
 
   return (
     <>
