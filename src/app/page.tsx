@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { featuredProducts, categoryMeta, products } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
+import PlantShowcase from "@/components/PlantShowcase";
 
 export default function HomePage() {
   const categories = Object.entries(categoryMeta) as [
@@ -196,6 +197,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Plant Showcase ── */}
+      <PlantShowcase />
 
       {/* ── Featured Products ── */}
       <section className="py-20 bg-white">

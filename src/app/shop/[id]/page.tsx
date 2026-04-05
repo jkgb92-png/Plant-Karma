@@ -79,7 +79,7 @@ export default async function ProductDetailPage({
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           {/* ── Left: Image ── */}
           <div className="space-y-4">
-            <div className="relative h-80 sm:h-[440px] rounded-3xl overflow-hidden shadow-xl">
+            <div className="relative h-[360px] sm:h-[520px] rounded-3xl overflow-hidden shadow-xl">
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${product.gradient}`}
               />
@@ -91,7 +91,8 @@ export default async function ProductDetailPage({
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+              {/* Richer bottom-to-middle overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
               {/* Badges */}
               <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
                 <span className={`badge ${meta.bg} ${meta.color} shadow`}>
@@ -103,21 +104,30 @@ export default async function ProductDetailPage({
                   </span>
                 )}
               </div>
+              {/* Big emoji centered at bottom */}
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center pointer-events-none select-none">
+                <span className="text-7xl opacity-80 drop-shadow-lg">
+                  {product.emoji}
+                </span>
+              </div>
             </div>
 
-            {/* Guarantee chips */}
-            <div className="grid grid-cols-3 gap-3">
+            {/* Botanical stat ribbon */}
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
               {[
-                { icon: "🌿", label: "Wildcrafted" },
-                { icon: "📦", label: "Free Shipping $50+" },
-                { icon: "💚", label: "Satisfaction Guaranteed" },
-              ].map(({ icon, label }) => (
+                { icon: "📍", label: "Origin", value: product.origin.split(" ").slice(0, 3).join(" ") },
+                { icon: meta.emoji, label: "Category", value: meta.label },
+                { icon: "⭐", label: "Rating", value: `${product.rating.toFixed(1)} (${product.reviews})` },
+                { icon: "📦", label: "Unit", value: product.unit },
+                { icon: product.inStock ? "✅" : "❌", label: "Stock", value: product.inStock ? "In Stock" : "Out of Stock" },
+              ].map(({ icon, label, value }) => (
                 <div
                   key={label}
-                  className="flex flex-col items-center gap-1 rounded-xl bg-white border border-stone-100 p-3 text-center shadow-sm"
+                  className="flex flex-col items-center gap-1 rounded-xl bg-white border border-stone-100 px-2 py-3 text-center shadow-sm"
                 >
-                  <span className="text-xl">{icon}</span>
-                  <span className="text-xs text-stone-500 leading-snug">{label}</span>
+                  <span className="text-lg">{icon}</span>
+                  <span className="text-[10px] font-semibold text-stone-400 uppercase tracking-wide">{label}</span>
+                  <span className="text-xs text-stone-700 font-medium leading-tight">{value}</span>
                 </div>
               ))}
             </div>
@@ -134,11 +144,16 @@ export default async function ProductDetailPage({
 
             {/* Rating */}
             <div className="flex items-center gap-3 mb-5">
-              <div className="flex text-amber-400 text-lg">
+              <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i}>
-                    {i < Math.round(product.rating) ? "★" : "☆"}
-                  </span>
+                  <svg
+                    key={i}
+                    className={`h-4 w-4 ${i < Math.round(product.rating) ? "text-amber-400" : "text-stone-200"}`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
                 ))}
               </div>
               <span className="text-sm font-semibold text-stone-700">
@@ -153,6 +168,31 @@ export default async function ProductDetailPage({
             <p className="text-stone-600 leading-relaxed mb-5 text-[15px]">
               {product.shortDescription}
             </p>
+
+            {/* Plant Profile Quick Facts */}
+            <div className="mb-5 rounded-2xl bg-mint/50 border-l-4 border-moss p-4">
+              <h3 className="text-xs font-bold text-moss uppercase tracking-widest mb-3">
+                🌿 Plant Profile — Quick Facts
+              </h3>
+              <div className="space-y-2.5">
+                <div>
+                  <p className="text-[11px] font-semibold text-stone-400 uppercase tracking-wide mb-1">
+                    ✨ Spiritual Highlight
+                  </p>
+                  <p className="text-sm text-stone-700 leading-snug">
+                    {product.highlights[0]}
+                  </p>
+                </div>
+                <div className="border-t border-emerald-200 pt-2.5">
+                  <p className="text-[11px] font-semibold text-stone-400 uppercase tracking-wide mb-1">
+                    🔬 Science Highlight
+                  </p>
+                  <p className="text-sm text-stone-700 leading-snug">
+                    {product.highlights[1]}
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-2 mb-1">

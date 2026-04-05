@@ -10,6 +10,8 @@ export interface Product {
   image: string;
   gradient: string; // fallback gradient when image doesn't load
   emoji: string;
+  tagline: string; // short poetic 6–10 word hook
+  highlights: [string, string]; // [top spiritual use, top scientific benefit]
   shortDescription: string;
   description: string;
   spiritualUses: string[];
@@ -35,6 +37,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=600&auto=format&fit=crop&q=80",
     gradient: "from-emerald-700 to-emerald-500",
     emoji: "🌿",
+    tagline: "Ancient wisdom packed into every miraculous leaf.",
+    highlights: [
+      "Sacred sattvic food that balances the doshas and opens the heart chakra.",
+      "Contains 7× more vitamin C than oranges and 4× more calcium than milk.",
+    ],
     shortDescription:
       "The 'miracle tree' packed with essential nutrients and antioxidants.",
     description:
@@ -71,6 +78,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
+    tagline: "The incomparable queen of herbs and holy devotion.",
+    highlights: [
+      "A direct portal to the divine — revered in Hindu devotion for millennia.",
+      "Classified as an adaptogen — clinically shown to lower cortisol and reduce anxiety.",
+    ],
     shortDescription:
       "The Queen of Herbs — a revered adaptogen for body, mind, and spirit.",
     description:
@@ -107,6 +119,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=600&auto=format&fit=crop&q=80",
     gradient: "from-teal-700 to-emerald-500",
     emoji: "🌾",
+    tagline: "Memory, protection, and forest-edge fragrance distilled.",
+    highlights: [
+      "Symbol of loyalty and memory in Mediterranean and European folk magic.",
+      "Aroma of 1,8-cineole measurably improves speed and accuracy of memory recall.",
+    ],
     shortDescription:
       "Ancient herb of remembrance, protection, and sharp-minded clarity.",
     description:
@@ -143,6 +160,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600&auto=format&fit=crop&q=80",
     gradient: "from-lime-600 to-yellow-400",
     emoji: "🍋",
+    tagline: "Sunshine in leaf form — calm, bright, and restorative.",
+    highlights: [
+      "Invites clarity, optimism, and divine inspiration in ritual use.",
+      "Rosmarinic acid produces a natural anxiolytic effect without drowsiness.",
+    ],
     shortDescription:
       "Sunshine herb — calming, joyful, and deeply healing for nerves and digestion.",
     description:
@@ -179,6 +201,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600&auto=format&fit=crop&q=80",
     gradient: "from-yellow-600 to-amber-500",
     emoji: "🌻",
+    tagline: "A torch-bearer of the old world, healer of lungs.",
+    highlights: [
+      "Ancient Germanic torch plant — guide for souls in sacred processions.",
+      "Saponins and mucilage soothe inflamed bronchial passages and ease dry cough.",
+    ],
     shortDescription:
       "Towering roadside healer — the great lung herb of traditional medicine.",
     description:
@@ -217,6 +244,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=600&auto=format&fit=crop&q=80",
     gradient: "from-amber-700 to-orange-500",
     emoji: "🫧",
+    tagline: "Zero-waste suds from the tree of a thousand uses.",
+    highlights: [
+      "Sacred Ayurvedic purifying agent — cleanses body and aura before ceremony.",
+      "Contains 12% saponins — natural surfactants that effectively lift oils and grime.",
+    ],
     shortDescription:
       "Nature's laundry detergent — a zero-waste saponin powerhouse.",
     description:
@@ -253,6 +285,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1508674861872-a51e06c50c9b?w=600&auto=format&fit=crop&q=80",
     gradient: "from-stone-700 to-amber-600",
     emoji: "🌰",
+    tagline: "Dark, bold, and wild — Appalachian forest medicine.",
+    highlights: [
+      "Hull used to write powerful protection and binding spells in folk magic.",
+      "Juglone demonstrates antiparasitic activity against intestinal worms.",
+    ],
     shortDescription:
       "Wild-foraged native nut with bold earthy flavor and potent medicinal properties.",
     description:
@@ -289,6 +326,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&auto=format&fit=crop&q=80",
     gradient: "from-yellow-700 to-amber-500",
     emoji: "🍂",
+    tagline: "Buttery autumn treasure — the forest's forgotten feast.",
+    highlights: [
+      "A grandfather spirit tree offering abundance and community in the forest.",
+      "Extremely energy-dense with heart-healthy monounsaturated fats and high magnesium.",
+    ],
     shortDescription:
       "Rich, buttery native nut — a forgotten staple of Indigenous cuisine.",
     description:
@@ -327,6 +369,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1531217040651-e7a8f6bde316?w=600&auto=format&fit=crop&q=80",
     gradient: "from-yellow-500 to-green-500",
     emoji: "🌼",
+    tagline: "Make a wish — the humble weed that heals everything.",
+    highlights: [
+      "The oldest wishing plant — a bridge between this world and the cosmos.",
+      "Inulin feeds beneficial gut bacteria, significantly improving microbiome diversity.",
+    ],
     shortDescription:
       "The most misunderstood plant on your lawn — a complete healing food.",
     description:
@@ -363,6 +410,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=600&auto=format&fit=crop&q=80",
     gradient: "from-green-600 to-emerald-400",
     emoji: "🌿",
+    tagline: "The sting fades; only deep nourishment remains.",
+    highlights: [
+      "Protection charm against envy, hexes, and ill will in folk tradition.",
+      "Contains 2.7mg iron per 100g — one of the highest non-heme iron sources in nature.",
+    ],
     shortDescription:
       "The sting of healing — one of the most nutrient-dense plants on Earth.",
     description:
@@ -399,6 +451,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1500622944204-b135684e99fd?w=600&auto=format&fit=crop&q=80",
     gradient: "from-lime-500 to-emerald-400",
     emoji: "⭐",
+    tagline: "Cool, star-bright, and quietly healing your skin.",
+    highlights: [
+      "A Venus herb — used in love charms to attract gentle, reciprocal affection.",
+      "Topical use reduces histamine-triggered itch and redness from eczema and bites.",
+    ],
     shortDescription:
       "Delicate star flower — a cooling, soothing remedy hiding in plain sight.",
     description:
@@ -435,6 +492,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop&q=80",
     gradient: "from-green-500 to-teal-400",
     emoji: "💚",
+    tagline: "Omega-3 riches growing wild beneath your feet.",
+    highlights: [
+      "Hung above doorways to ward off evil spirits and invite abundance.",
+      "Contains 300–400mg ALA omega-3 per 100g — highest of any leafy green plant.",
+    ],
     shortDescription:
       "Omega-3 rich succulent — the weed that belongs on every plate.",
     description:
@@ -473,6 +535,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop&q=80",
     gradient: "from-orange-600 to-yellow-500",
     emoji: "🌻",
+    tagline: "The sunflower's hidden gift — sweet, earthy, transformative.",
+    highlights: [
+      "Solar symbol of hidden knowledge — what lies beneath holds the nourishment.",
+      "Richest plant source of inulin — nourishes Bifidobacteria and Lactobacillus.",
+    ],
     shortDescription:
       "Native sunflower tuber — the original prebiotic superfood of the Americas.",
     description:
@@ -509,6 +576,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1574173229935-c5cf60daa16b?w=600&auto=format&fit=crop&q=80",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🧄",
+    tagline: "Spring's first forest whisper — bold and fleeting.",
+    highlights: [
+      "Spring equinox ritual food — clearing winter's heaviness from body and spirit.",
+      "High allicin content with broad antibacterial and antiviral effects.",
+    ],
     shortDescription:
       "Spring's most anticipated wild green — bold, garlicky, and fleeting.",
     description:
@@ -546,6 +618,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1595511890410-3b8dc237a537?w=600&auto=format&fit=crop&q=80",
     gradient: "from-purple-800 to-violet-600",
     emoji: "🫐",
+    tagline: "Elder Mother's berries — immunity forged from the wild.",
+    highlights: [
+      "Known as the Elder Mother — a spirit guardian of the plant world.",
+      "Randomized controlled trials show elderberry significantly shortens flu duration.",
+    ],
     shortDescription:
       "Florida's immune-boosting native berry — centuries of folk medicine in every cluster.",
     description:
@@ -582,6 +659,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&auto=format&fit=crop&q=80",
     gradient: "from-green-800 to-teal-600",
     emoji: "🌴",
+    tagline: "Florida's iconic palm — where strength meets stillness.",
+    highlights: [
+      "Carried by Seminole warriors for strength, protection, and sharpened instincts.",
+      "Multiple meta-analyses show significant improvement in urinary flow and BPH symptoms.",
+    ],
     shortDescription:
       "Florida's iconic palm — a powerhouse berry for hormonal and urinary health.",
     description:
@@ -618,6 +700,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=80",
     gradient: "from-violet-700 to-purple-500",
     emoji: "🌸",
+    tagline: "Nature's most beautiful anxiety remedy in full bloom.",
+    highlights: [
+      "Worn as a talisman to bring peace and dissolve conflict in relationships.",
+      "Clinical trial found equivalent anxiety reduction to oxazepam with far fewer side effects.",
+    ],
     shortDescription:
       "Florida's wild anxiety remedy — stunning blossoms with deep calming power.",
     description:
@@ -654,6 +741,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?w=600&auto=format&fit=crop&q=80",
     gradient: "from-fuchsia-700 to-purple-500",
     emoji: "🍇",
+    tagline: "Iridescent jewels that repel bugs and captivate souls.",
+    highlights: [
+      "Jewel-bright berries planted to mark sacred space and welcome nature spirits.",
+      "USDA-confirmed repellent efficacy comparable to DEET with no known toxicity.",
+    ],
     shortDescription:
       "Florida's dazzling purple native — a bug-repelling, jelly-making woodland gem.",
     description:
@@ -690,6 +782,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
     gradient: "from-emerald-800 to-green-500",
     emoji: "☕",
+    tagline: "America's forgotten caffeine — smoother than coffee.",
+    highlights: [
+      "Ceremonial Black Drink of Southeastern nations — purifies body and mind.",
+      "Contains caffeine, theobromine, and theophylline for a smoother stimulant profile than coffee.",
+    ],
     shortDescription:
       "North America's only native caffeinated plant — a forgotten indigenous tea.",
     description:
@@ -726,6 +823,11 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=600&auto=format&fit=crop&q=80",
     gradient: "from-teal-600 to-green-500",
     emoji: "🥬",
+    tagline: "The garden weed that outshines every cultivated green.",
+    highlights: [
+      "Eaten in new beginnings rituals to ground the spirit and welcome abundance.",
+      "Contains 8g protein per 100g — one of the highest of any leafy green vegetable.",
+    ],
     shortDescription:
       "Garden weed by day, nutritional powerhouse always — a wild spinach beyond compare.",
     description:

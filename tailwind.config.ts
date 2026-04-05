@@ -35,11 +35,16 @@ const config: Config = {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "slide-up": {
+          "0%": { opacity: "0", transform: "translateY(100%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out forwards",
         sway: "sway 4s ease-in-out infinite",
         shimmer: "shimmer 2s linear infinite",
+        "slide-up": "slide-up 0.35s ease-out forwards",
       },
     },
   },
