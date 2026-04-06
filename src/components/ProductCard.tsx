@@ -56,7 +56,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Photo on top */}
           <Image
             src={product.image}
-            alt={product.name}
+            alt={product.imageAlt}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

@@ -15,6 +15,8 @@ interface ProductTabsProps {
   scientificBenefits: string[];
   howToUse: string;
   origin: string;
+  identificationGuide: string;
+  lookalikes: { name: string; warning: string }[];
 }
 
 export default function ProductTabs({
@@ -24,6 +26,8 @@ export default function ProductTabs({
   scientificBenefits,
   howToUse,
   origin,
+  identificationGuide,
+  lookalikes,
 }: ProductTabsProps) {
   const [active, setActive] = useState(tabs[0].id);
 
@@ -143,6 +147,75 @@ export default function ProductTabs({
                 </li>
               ))}
             </ol>
+          </div>
+        )}
+        {/* ── Identify ── */}
+        {active === "identify" && (
+          <div className="space-y-6">
+            {/* Visual ID guide */}
+            <div className="rounded-2xl bg-mint/40 border border-emerald-100 p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-2xl">🔍</span>
+                <h4 className="font-serif text-lg font-bold text-forest">
+                  How to Identify This Plant
+                </h4>
+              </div>
+              <p className="text-stone-600 leading-relaxed text-[15px]">
+                {identificationGuide}
+              </p>
+            </div>
+
+            {/* Lookalikes */}
+            {lookalikes.length > 0 && (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">⚠️</span>
+                  <h4 className="font-serif text-base font-bold text-amber-800">
+                    Lookalike Warning{lookalikes.length > 1 ? "s" : ""}
+                  </h4>
+                </div>
+                {lookalikes.map((item, i) => {
+                  const isDangerous =
+                    item.warning.toUpperCase().includes("DEADLY") ||
+                    item.warning.toUpperCase().includes("DANGEROUS") ||
+                    item.warning.toUpperCase().includes("TOXIC");
+                  return (
+                    <div
+                      key={i}
+                      className={`rounded-xl border-l-4 p-4 ${
+                        isDangerous
+                          ? "bg-red-50 border-red-500"
+                          : "bg-amber-50 border-amber-400"
+                      }`}
+                    >
+                      <p
+                        className={`text-sm font-bold mb-1 ${
+                          isDangerous ? "text-red-700" : "text-amber-800"
+                        }`}
+                      >
+                        {isDangerous ? "⛔" : "⚠️"} {item.name}
+                      </p>
+                      <p
+                        className={`text-sm leading-relaxed ${
+                          isDangerous ? "text-red-600" : "text-amber-700"
+                        }`}
+                      >
+                        {item.warning}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {lookalikes.length === 0 && (
+              <div className="rounded-xl bg-stone-50 border border-stone-200 p-4 flex items-center gap-3">
+                <span className="text-xl">✅</span>
+                <p className="text-sm text-stone-500">
+                  No known dangerous lookalikes for this plant in North America.
+                </p>
+              </div>
+            )}
           </div>
         )}
       </div>

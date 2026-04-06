@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { products, Category, categoryMeta, featuredProducts } from "@/lib/products";
+import { products, Category, categoryMeta, featuredProducts, getProductById } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
@@ -11,6 +11,7 @@ import { Suspense } from "react";
 // Stable "Plant of the Day" — picks based on day of year so it doesn't change on re-render
 const dayIndex = Math.floor(Date.now() / 86_400_000) % featuredProducts.length;
 const plantOfTheDay = featuredProducts[dayIndex];
+const moringa = getProductById("moringa");
 
 function ShopContent() {
   const searchParams = useSearchParams();
@@ -64,8 +65,8 @@ function ShopContent() {
         {/* Background plant photo */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=1400&auto=format&fit=crop&q=80"
-            alt="Moringa plant"
+            src={moringa?.image.replace("w=600", "w=1400") ?? "https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=1400&auto=format&fit=crop&q=80"}
+            alt={moringa?.imageAlt ?? "Moringa plant"}
             fill
             className="object-cover"
             sizes="100vw"

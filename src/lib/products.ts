@@ -24,6 +24,8 @@ export interface Product {
   reviews: number;
   origin: string;
   regions: string[]; // US regions where this plant grows natively or is cultivated
+  identificationGuide: string; // visual description for identifying this plant in the field
+  lookalikes: { name: string; warning: string }[]; // potentially dangerous look-alikes
 }
 
 export const products: Product[] = [
@@ -70,6 +72,9 @@ export const products: Product[] = [
     reviews: 128,
     origin: "Local Pacific Northwest farms",
     regions: ["Pacific Northwest", "West Coast", "Southeast"],
+    identificationGuide:
+      "Moringa grows as a slender, fast-growing tree with distinctive feathery, pinnate leaves bearing small oval leaflets about 1–2 cm long. The trunk is corky with pale gray-brown bark. In warm climates it produces long ribbed seed pods (drumsticks) up to 45 cm. The delicate compound leaf structure, drooping slightly in afternoon heat, is unlike most common garden plants.",
+    lookalikes: [],
   },
   {
     id: "tulsi",
@@ -79,8 +84,8 @@ export const products: Product[] = [
     price: 12.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Holy basil tulsi plant with purple-green leaves",
+      "https://upload.wikimedia.org/wikipedia/commons/8/82/Tulsi_or_Tulasi_Holy_basil.jpg",
+    imageAlt: "Holy basil tulsi plant with purple-green aromatic leaves",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
     tagline: "The incomparable queen of herbs and holy devotion.",
@@ -113,6 +118,14 @@ export const products: Product[] = [
     reviews: 97,
     origin: "Pacific Northwest greenhouse grown",
     regions: ["Pacific Northwest", "West Coast", "Southeast"],
+    identificationGuide:
+      "Holy Basil forms a bushy herb 30–60 cm tall with aromatic, oval, slightly toothed leaves 3–5 cm long on distinctly square stems (characteristic of the mint family). The plant is often purple-tinged — especially the stems and undersides of leaves in the Krishna variety. Crushing a leaf releases an unmistakable clove-and-pepper fragrance, far more pungent than sweet basil.",
+    lookalikes: [
+      {
+        name: "Sweet Basil (Ocimum basilicum)",
+        warning: "Similar appearance but distinctly sweeter, less spicy aroma and no purple tinge; safe to eat, just a different plant with different medicinal properties.",
+      },
+    ],
   },
   {
     id: "rosemary",
@@ -156,6 +169,9 @@ export const products: Product[] = [
     reviews: 74,
     origin: "Local hillside wild harvest",
     regions: ["Pacific Northwest", "West Coast", "Southwest"],
+    identificationGuide:
+      "Rosemary is unmistakable: dense, needle-like leaves 2–4 cm long, dark glossy green above and silvery-white below, arranged oppositely on woody square stems. Crushing any part releases an intense camphor-pine aroma immediately. Grows as an evergreen woody shrub with tiny pale-blue to violet flowers in clusters. The combination of needle leaves and resinous fragrance identifies it instantly.",
+    lookalikes: [],
   },
   {
     id: "lemon-balm",
@@ -165,8 +181,8 @@ export const products: Product[] = [
     price: 11.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Lemon balm bright green leaves with citrus fragrance",
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Melissa_officinalis1.jpg",
+    imageAlt: "Lemon balm bright green textured leaves with lemon scent",
     gradient: "from-lime-600 to-yellow-400",
     emoji: "🍋",
     tagline: "Sunshine in leaf form — calm, bright, and restorative.",
@@ -199,6 +215,14 @@ export const products: Product[] = [
     reviews: 61,
     origin: "Home garden & local wildcrafted",
     regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
+    identificationGuide:
+      "Lemon balm grows as a bushy herb up to 80 cm with heart-shaped, prominently veined, wrinkled leaves 3–8 cm long and scalloped edges. Square stems and opposite leaves mark it as a mint-family plant. The definitive test: rub a leaf between your fingers and smell — a clean, bright lemon fragrance is released, unlike any other common herb.",
+    lookalikes: [
+      {
+        name: "Catnip (Nepeta cataria)",
+        warning: "Similar square stem and scalloped leaves but smells unmistakably of cats, not lemon; not harmful but clearly different in scent.",
+      },
+    ],
   },
   {
     id: "mullein",
@@ -208,8 +232,8 @@ export const products: Product[] = [
     price: 13.99,
     unit: "1 oz dried leaf & flower",
     image:
-      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Towering mullein stalk with velvety silver-green leaves in a meadow",
+      "https://upload.wikimedia.org/wikipedia/commons/7/71/Verbascum_thapsus_001.JPG",
+    imageAlt: "Common mullein (Verbascum thapsus) tall flowering spike with yellow flowers and silver-green velvety leaves",
     gradient: "from-yellow-600 to-amber-500",
     emoji: "🌻",
     tagline: "A torch-bearer of the old world, healer of lungs.",
@@ -242,9 +266,15 @@ export const products: Product[] = [
     reviews: 43,
     origin: "Local meadow wildcrafted",
     regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+    identificationGuide:
+      "First-year mullein forms a striking rosette of enormous, densely woolly silver-green leaves up to 50 cm long — the thick velvety texture (like soft flannel) is completely unmistakable. In the second year a single tall spike rises up to 2 m, bearing densely packed small yellow flowers. Found on roadsides, disturbed soil, and open meadows. Rub the leaf: if it feels like velvet, it is mullein.",
+    lookalikes: [
+      {
+        name: "Common Foxglove (Digitalis purpurea)",
+        warning: "DANGEROUS: Foxglove first-year rosette has large basal leaves but they are smoother, less furry, distinctly toothed, and slightly sticky — foxglove is DEADLY TOXIC if eaten. Always confirm the velvet softness and grey-green colour before harvesting mullein.",
+      },
+    ],
   },
-
-  // ── NUTS ───────────────────────────────────────────────
   {
     id: "soap-nuts",
     name: "Soap Nuts",
@@ -287,6 +317,9 @@ export const products: Product[] = [
     reviews: 156,
     origin: "Pacific Northwest / Himalayan import",
     regions: ["Pacific Northwest", "West Coast"],
+    identificationGuide:
+      "Soap nut shells are small (2–3 cm), rounded, amber to dark brown, and leathery with a slightly translucent, waxy surface. The key test: when wet, they foam readily — a handful rubbed in water produces real lather. The Sapindus tree has large, compound leaves with paired leaflets. The dried shells have a slight honeyed aroma.",
+    lookalikes: [],
   },
   {
     id: "black-walnuts",
@@ -330,6 +363,14 @@ export const products: Product[] = [
     reviews: 52,
     origin: "Local Appalachian wild-harvest",
     regions: ["Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Black walnuts in their green hull are tennis-ball sized, lime-green, and rock-hard — they do not split open like hickory husks. The hull stains skin and fabric a permanent dark brown on contact. Beneath the hull, the hard corrugated dark shell contains deeply ridged kernel halves. The compound leaves (15–23 leaflets) and the pungent, spicy-sweet aroma of crushed hull are definitively distinctive.",
+    lookalikes: [
+      {
+        name: "Butternut / White Walnut (Juglans cinerea)",
+        warning: "Similar green hull but elongated (egg-shaped, not round) and the hull is more sticky. Also edible and medicinal — not dangerous.",
+      },
+    ],
   },
   {
     id: "hickory-nuts",
@@ -339,8 +380,8 @@ export const products: Product[] = [
     price: 12.99,
     unit: "3 oz shelled pieces",
     image:
-      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Shagbark hickory nuts with thick ridged shells in autumn leaves",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b5/Shagbark_hickory_cucamonga.jpg",
+    imageAlt: "Shagbark hickory nuts in husks on the ground among autumn leaves",
     gradient: "from-yellow-700 to-amber-500",
     emoji: "🍂",
     tagline: "Buttery autumn treasure — the forest's forgotten feast.",
@@ -373,9 +414,15 @@ export const products: Product[] = [
     reviews: 38,
     origin: "Eastern Woodlands local harvest",
     regions: ["Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Shagbark hickory trees are unmistakable for their dramatically shaggy bark — long, curved gray-brown plates that peel away from the trunk in loose strips. Leaves are compound with 5 large leaflets (the terminal three largest). The round nuts are enclosed in a thick (8–12 mm) husk that splits into 4 sections at maturity, revealing a pale tan shell with 4 ridges. The shaggy bark alone confirms identification at a distance.",
+    lookalikes: [
+      {
+        name: "Bitternut Hickory (Carya cordiformis)",
+        warning: "Very bitter nuts — unpleasant to eat raw. All native hickory species are technically edible but bitternut requires extensive processing to remove bitterness.",
+      },
+    ],
   },
-
-  // ── WILD WEEDS ─────────────────────────────────────────
   {
     id: "dandelion",
     name: "Dandelion Root & Leaf",
@@ -418,6 +465,14 @@ export const products: Product[] = [
     reviews: 89,
     origin: "Local wild meadows (pesticide-free)",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Dandelion is identified by its deeply toothed rosette of leaves (the teeth point backward toward the base, unlike hawkweed), single hollow flower stalks bearing bright yellow composite flowers, and fluffy white spherical seed heads. The leaf rosette has no stem — leaves emerge directly from the ground. When any part is broken, a white milky sap appears. Grows in lawns and disturbed areas everywhere.",
+    lookalikes: [
+      {
+        name: "Cat's Ear (Hypochaeris radicata)",
+        warning: "Very similar yellow flowers but leaves are hairier and less deeply toothed; stems have small scale-like bracts. Edible and harmless — just different.",
+      },
+    ],
   },
   {
     id: "stinging-nettle",
@@ -427,8 +482,8 @@ export const products: Product[] = [
     price: 10.99,
     unit: "2 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Stinging nettle plant with serrated leaves in spring growth",
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/Urtica_dioica.JPG",
+    imageAlt: "Stinging nettle (Urtica dioica) plant with serrated heart-shaped leaves and fine stinging hairs",
     gradient: "from-green-600 to-emerald-400",
     emoji: "🌿",
     tagline: "The sting fades; only deep nourishment remains.",
@@ -461,6 +516,14 @@ export const products: Product[] = [
     reviews: 76,
     origin: "Pacific Northwest streamside wildcrafted",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
+    identificationGuide:
+      "Stinging nettle has heart-shaped, deeply serrated leaves 3–15 cm long, arranged in opposite pairs on erect square stems. The definitive test: brushing the plant with bare skin produces an immediate burning sting from microscopic hollow silica needles that inject formic acid and histamine. Stems and leaf undersides are covered in fine visible hairs. Plants grow in moist, nitrogen-rich soil near streams and forest edges.",
+    lookalikes: [
+      {
+        name: "White Deadnettle (Lamium album)",
+        warning: "Similar serrated leaves and square stem but completely sting-free — touching it causes no reaction. Also a useful medicinal herb, not dangerous.",
+      },
+    ],
   },
   {
     id: "chickweed",
@@ -470,8 +533,8 @@ export const products: Product[] = [
     price: 7.99,
     unit: "1.5 oz dried herb",
     image:
-      "https://images.unsplash.com/photo-1500622944204-b135684e99fd?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Chickweed tiny star-shaped white flowers among green leaves",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kaldari_Stellaria_media_01.jpg",
+    imageAlt: "Chickweed (Stellaria media) with tiny star-shaped white flowers and bright green leaves",
     gradient: "from-lime-500 to-emerald-400",
     emoji: "⭐",
     tagline: "Cool, star-bright, and quietly healing your skin.",
@@ -504,6 +567,14 @@ export const products: Product[] = [
     reviews: 31,
     origin: "Local garden wildcrafted (spring harvest)",
     regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast", "Southeast"],
+    identificationGuide:
+      "Chickweed is a low, spreading herb with small oval leaves 5–20 mm in opposite pairs. The tiny white flowers appear to have 10 petals but actually have only 5, each so deeply notched it looks divided. A key ID feature: a single line of fine hairs runs along one side of the stem between leaf pairs, switching sides at each node. Grows in cool, moist conditions throughout fall, winter, and spring.",
+    lookalikes: [
+      {
+        name: "Scarlet Pimpernel (Anagallis arvensis)",
+        warning: "Similar small oval opposite leaves and low growth habit but flowers are salmon-red (not white) and leaves have tiny black dots underneath. Mildly toxic if eaten in quantity.",
+      },
+    ],
   },
   {
     id: "purslane",
@@ -513,8 +584,8 @@ export const products: Product[] = [
     price: 9.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop&q=80",
-    imageAlt: "Purslane succulent green leaves with thick fleshy stems",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Portulaca-oleracea-leaves.jpg",
+    imageAlt: "Purslane (Portulaca oleracea) succulent green oval leaves with thick reddish stems",
     gradient: "from-green-500 to-teal-400",
     emoji: "💚",
     tagline: "Omega-3 riches growing wild beneath your feet.",
@@ -547,9 +618,15 @@ export const products: Product[] = [
     reviews: 48,
     origin: "Local summer wild harvest",
     regions: ["Southwest", "Great Plains", "Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Purslane has small (1–3 cm), oval, succulent leaves that are thick, smooth, and slightly glossy — they snap crisply like a succulent when broken. Stems are round, reddish, and sprawl flat along the ground in a mat. The leaves have no hair whatsoever. The entire plant is moisture-filled and will not wilt easily. Found in summer heat in disturbed soil, garden beds, and cracks in pavement.",
+    lookalikes: [
+      {
+        name: "Spurge (Euphorbia species)",
+        warning: "DANGEROUS: Some spurge species grow similarly flat and small in gardens. The critical difference: break a stem — spurge bleeds a milky white latex sap; purslane has clear watery sap. Never eat a plant that bleeds white milk.",
+      },
+    ],
   },
-
-  // ── VEGETABLES ─────────────────────────────────────────
   {
     id: "jerusalem-artichoke",
     name: "Jerusalem Artichoke",
@@ -592,6 +669,9 @@ export const products: Product[] = [
     reviews: 67,
     origin: "Local organic farm",
     regions: ["Midwest", "Great Plains", "Southeast", "Northeast"],
+    identificationGuide:
+      "Jerusalem artichoke grows as a tall sunflower relative reaching 1.5–3 m in summer with rough, slightly sandpapery lance-shaped leaves and small yellow sunflowers (5–10 cm across) late in the season. The edible knobby tubers are found underground, pale tan to purple-tinged and irregularly lumpy. The underground tubers are harvested after the first frost when sugars convert from inulin to sweeter forms.",
+    lookalikes: [],
   },
   {
     id: "wild-ramps",
@@ -635,8 +715,19 @@ export const products: Product[] = [
     reviews: 112,
     origin: "Appalachian forest wild-harvest",
     regions: ["Midwest", "Northeast", "Southeast"],
+    identificationGuide:
+      "Wild ramps emerge in early spring in rich deciduous forest, producing 1–3 broad, smooth, satiny, elliptical leaves 15–30 cm long from a slender white bulb. The definitive identification: crush or scratch the leaf — it releases a powerful, unmistakable garlic odor. The red-tinged base of the leaves where they meet the bulb is distinctive. Leaves appear before trees leaf out.",
+    lookalikes: [
+      {
+        name: "Lily of the Valley (Convallaria majalis)",
+        warning: "DEADLY DANGEROUS: Lily of the valley has very similar broad leaves emerging in early spring from woodland soil. Critical difference: lily of the valley has NO garlic smell whatsoever — always crush and smell before eating any ramp-like plant. Lily of the valley causes fatal heart arrhythmia.",
+      },
+      {
+        name: "False Hellebore / Corn Lily (Veratrum viride)",
+        warning: "DEADLY DANGEROUS: Broad leaves in moist forest sites, but much larger and strongly ribbed/pleated. No garlic smell. Contains extremely toxic veratramine alkaloids.",
+      },
+    ],
   },
-  // ── FLORIDA NATIVES ────────────────────────────────────
   {
     id: "elderberry",
     name: "Elderberry",
@@ -679,6 +770,18 @@ export const products: Product[] = [
     reviews: 84,
     origin: "Florida woodland wild-harvest",
     regions: ["Southeast", "Midwest", "Northeast"],
+    identificationGuide:
+      "American elderberry grows as a multi-stemmed shrub 2–4 m tall with large compound leaves of 5–11 lance-shaped, toothed leaflets that emit an unpleasant earthy smell when crushed. In summer, large flat-topped clusters of tiny white flowers appear, followed by hanging clusters of deep purple-black berries in late summer. The stems have prominent white pith inside.",
+    lookalikes: [
+      {
+        name: "Pokeweed (Phytolacca americana)",
+        warning: "DANGEROUS: Pokeweed has large dark purple berries in elongated grape-like clusters (not flat-topped umbels). Pokeweed berries, roots, and stems are all highly toxic. Always confirm the flat-topped flower/berry cluster shape of elderberry.",
+      },
+      {
+        name: "Water Hemlock (Cicuta species)",
+        warning: "DEADLY: Water hemlock has similar white flat-topped flower clusters but single compound (not feather-compound) leaves and grows in very wet areas. Crush leaves — elderflowers have a pleasant, musky-sweet scent; hemlock smells of mouse urine or carrots.",
+      },
+    ],
   },
   {
     id: "saw-palmetto",
@@ -722,6 +825,9 @@ export const products: Product[] = [
     reviews: 67,
     origin: "Florida scrubland wild-harvest",
     regions: ["Southeast"],
+    identificationGuide:
+      "Saw palmetto is a low-growing fan palm with distinctive fan-shaped fronds that have sharp, saw-toothed stems (hence the name) — the serrated leaf stems are easily felt and the source of the name. Plants typically grow 2–4 m in dense thickets in Florida scrubland. Small black oblong berries (about 2 cm) ripen in tight clusters from August to October.",
+    lookalikes: [],
   },
   {
     id: "passionflower",
@@ -765,6 +871,9 @@ export const products: Product[] = [
     reviews: 53,
     origin: "Florida roadside & forest edge wild-harvest",
     regions: ["Southeast", "Midwest", "Northeast"],
+    identificationGuide:
+      "Passionflower is a climbing vine with deeply 3-lobed leaves and one of the most extraordinary flowers in the plant world — the intricate purple and white bloom with its radiating corona of filaments is unmistakable and unlike anything else in the native flora. The egg-sized yellow-green fruits (maypops) pop loudly when stepped on. Vines grow on fences, roadsides, and forest edges.",
+    lookalikes: [],
   },
   {
     id: "beautyberry",
@@ -808,6 +917,9 @@ export const products: Product[] = [
     reviews: 31,
     origin: "Florida woodland wild-harvest",
     regions: ["Southeast"],
+    identificationGuide:
+      "American beautyberry is a loosely arching shrub 1–2 m tall with large, soft, wrinkled, slightly toothed ovate leaves 10–20 cm long. The leaves have a mild pleasant fragrance when crushed. The identifying feature is unmistakable: clusters of vivid magenta-purple berries (September–October) arranged in tight rings around the stems at each leaf node, like luminous purple beads.",
+    lookalikes: [],
   },
   {
     id: "yaupon-holly",
@@ -851,6 +963,14 @@ export const products: Product[] = [
     reviews: 45,
     origin: "Florida coastal scrub wild-harvest",
     regions: ["Southeast"],
+    identificationGuide:
+      "Yaupon holly is an evergreen shrub or small tree with small (2–4 cm), oval, glossy, dark green leaves with slightly scalloped edges. In winter, female plants bear abundant small red berries. The bark is smooth and light gray. Found in coastal scrub, maritime forests, and sandy flatwoods. The small, neat leaves and persistent red berries are the key identifiers.",
+    lookalikes: [
+      {
+        name: "Inkberry (Ilex glabra)",
+        warning: "Similar small holly leaves but inkberry berries are black, not red. Leaves are very similar. Both are native — inkberry is edible but not caffeinated.",
+      },
+    ],
   },
   {
     id: "lambs-quarters",
@@ -894,9 +1014,10 @@ export const products: Product[] = [
     reviews: 29,
     origin: "Local organic garden / wildcrafted",
     regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Lamb's quarters is an upright annual herb with distinctive diamond-shaped leaves 2–10 cm long with slightly irregular toothed margins. The most visible identifier: young leaves and growing tips are coated in a fine white mealy powder (a natural waxy coating), giving them a frosted appearance. Leaves turn reddish in autumn. Grows prolifically in gardens, fields, and disturbed soil.",
+    lookalikes: [],
   },
-
-  // ── ADDITIONAL WILD WEEDS ──────────────────────────────
   {
     id: "yarrow",
     name: "Yarrow",
@@ -938,6 +1059,14 @@ export const products: Product[] = [
     reviews: 64,
     origin: "Local meadow & hillside wildcrafted",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+    identificationGuide:
+      "Yarrow has distinctive finely divided, feathery leaves 5–15 cm long that look almost fern-like — the Latin millefolium means 'thousand leaves'. The flat-topped clusters of tiny white (occasionally pink) flowers are arranged in dense corymbs. Crush a leaf for a strong, pleasantly bitter, herbal-medicinal aroma. Common in meadows, roadsides, and disturbed areas.",
+    lookalikes: [
+      {
+        name: "Poison Hemlock (Conium maculatum)",
+        warning: "DEADLY DANGEROUS: Poison hemlock has similar flat-topped white flower clusters, but its leaves are triangular (not feathery), stems have distinctive purple blotches, and it smells strongly of mouse urine when crushed — completely unlike yarrow's pleasant herbal aroma. Confirm scent before any use.",
+      },
+    ],
   },
   {
     id: "yellow-dock",
@@ -980,6 +1109,14 @@ export const products: Product[] = [
     reviews: 47,
     origin: "Local roadsides and field edges wildcrafted",
     regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast", "Southeast"],
+    identificationGuide:
+      "Yellow dock has lance-shaped leaves with distinctive wavy or curly margins (crispus = curled) 15–30 cm long. The long yellow taproot is the key feature: when cut, it reveals a distinctly yellow interior. In late summer, the plant produces tall spikes of reddish-brown seed clusters that persist through winter. The curly leaf margins distinguish it from broad-leaved dock (R. obtusifolius).",
+    lookalikes: [
+      {
+        name: "Broad-Leaved Dock (Rumex obtusifolius)",
+        warning: "Very similar plant with straight-edged (not curly) leaves and broader shape. Also medicinally useful but different compound profile. Not dangerous.",
+      },
+    ],
   },
   {
     id: "burdock",
@@ -1022,6 +1159,14 @@ export const products: Product[] = [
     reviews: 58,
     origin: "Local disturbed land wildcrafted",
     regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+    identificationGuide:
+      "Burdock forms enormous basal leaves in its first year — up to 50 cm wide, heart-shaped, dark green on top and densely white-woolly underneath. In the second year a tall branching stalk rises to 2 m bearing round brownish burr heads (the famous velcro-inspiring burs). The hollow taproot (cross-section shows distinct structure) is the medicinal part. Found on roadsides and disturbed sites.",
+    lookalikes: [
+      {
+        name: "Common Foxglove (Digitalis purpurea)",
+        warning: "DANGEROUS: First-year foxglove rosette can superficially resemble young burdock but foxglove leaves are much softer, more finely toothed, and not woolly-white underneath. Foxglove is DEADLY TOXIC. Always check the distinctive white-woolly leaf underside of burdock.",
+      },
+    ],
   },
   {
     id: "st-johns-wort",
@@ -1064,6 +1209,9 @@ export const products: Product[] = [
     reviews: 92,
     origin: "Local hillside wildcrafted (peak bloom harvest)",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+    identificationGuide:
+      "St. John's Wort has small oval leaves (1–3 cm) with distinctive translucent dots visible when held up to light — these are the oil glands containing hypericin. When the bright yellow flowers are crushed between fingers they stain them red or purple (the hypericin pigment). Grows in open meadows and disturbed soil. The translucent-dotted leaves are the definitive field test.",
+    lookalikes: [],
   },
   {
     id: "plantain-weed",
@@ -1106,6 +1254,9 @@ export const products: Product[] = [
     reviews: 53,
     origin: "Local pathside wildcrafted (pesticide-free zones)",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Broadleaf plantain grows as a ground-level rosette of oval leaves 5–20 cm long with 3–7 parallel ribs running lengthwise (the veins are easily seen). If you pull a leaf and it snaps, you can see the stringy parallel vein fibers. The unmistakable seed stalks rise 15–40 cm above the rosette, bearing a dense cylindrical spike of tiny flowers and seeds. Grows in trampled paths, lawns, and disturbed soil.",
+    lookalikes: [],
   },
   {
     id: "mugwort",
@@ -1148,6 +1299,14 @@ export const products: Product[] = [
     reviews: 73,
     origin: "Local roadside and woodland edge wildcrafted",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
+    identificationGuide:
+      "Mugwort grows to 1–1.5 m with deeply divided, pinnate leaves that are dark green above and strikingly silver-white and woolly on the underside — this two-tone appearance is distinctive. The stem is reddish-purple when young. Crushing a leaf releases a strong, complex, camphor-sage aroma that is immediately recognizable. Found on roadsides and disturbed sites.",
+    lookalikes: [
+      {
+        name: "Common Wormwood (Artemisia absinthium)",
+        warning: "Closely related species with similar silver-grey foliage but slightly more silver overall (both sides, not just underside). Stronger, more bitter aroma. The thujone content in wormwood is much higher — use with extra caution and avoid in pregnancy.",
+      },
+    ],
   },
   {
     id: "wild-violet",
@@ -1190,6 +1349,9 @@ export const products: Product[] = [
     reviews: 39,
     origin: "Local woodland and garden wildcrafted (spring harvest)",
     regions: ["Midwest", "Northeast", "Southeast"],
+    identificationGuide:
+      "Wild violet emerges in early spring forming low patches with heart-shaped, slightly toothed leaves 2–8 cm wide. The deep purple to blue-violet flowers are 5-petaled and appear close to the ground in April–May. The lowest petal has distinctive dark veins. Both flowers and leaves are edible. Found carpeting woodland floors, lawns, and forest edges.",
+    lookalikes: [],
   },
   {
     id: "cleavers",
@@ -1232,9 +1394,10 @@ export const products: Product[] = [
     reviews: 34,
     origin: "Local hedgerow and woodland wildcrafted (spring)",
     regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
+    identificationGuide:
+      "Cleavers is immediately recognizable by its clinging, sticky nature — the stems and leaves adhere to clothing and animal fur like velcro (tiny hooked hairs). Grows as a sprawling, climbing annual with whorls of 6–8 narrow leaves arranged in rings around the stem at intervals. Tiny white 4-petaled flowers appear at leaf axils. Found scrambling through hedges, fences, and woodland edges in spring.",
+    lookalikes: [],
   },
-
-  // ── NEW HERBS ──────────────────────────────────────────
   {
     id: "lavender",
     name: "Lavender",
@@ -1276,6 +1439,9 @@ export const products: Product[] = [
     reviews: 84,
     origin: "Pacific Northwest farm grown",
     regions: ["Pacific Northwest", "West Coast", "Southwest"],
+    identificationGuide:
+      "True lavender (Lavandula angustifolia) has narrow, silvery-grey linear leaves 2–6 cm long on woody stems. The iconic purple flower spikes rise 20–40 cm above the foliage in long, thin wands. Crushing any part releases one of the world's most recognizable fragrances — floral, clean, slightly medicinal. Grows as a compact silver-grey shrub in well-drained soil.",
+    lookalikes: [],
   },
   {
     id: "chamomile",
@@ -1318,6 +1484,14 @@ export const products: Product[] = [
     reviews: 91,
     origin: "Local farm grown (pesticide-free)",
     regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
+    identificationGuide:
+      "German chamomile has finely feathery, thread-like leaves and white daisy flowers with hollow, cone-shaped yellow centers — the hollow receptacle is the key field identification feature (press a finger gently into the yellow center; it is noticeably hollow and conical). The whole plant has a sweet, apple-like fragrance. Grows as a delicate annual in open areas.",
+    lookalikes: [
+      {
+        name: "Scentless Mayweed (Tripleurospermum inodorum)",
+        warning: "Very similar white daisy flowers and feathery leaves but completely scentless. Not harmful, just no medicinal value. Smell before use — true chamomile has a distinct sweet apple-honey aroma.",
+      },
+    ],
   },
   {
     id: "echinacea",
@@ -1360,6 +1534,9 @@ export const products: Product[] = [
     reviews: 76,
     origin: "Great Plains local grow",
     regions: ["Great Plains", "Midwest", "Rocky Mountains"],
+    identificationGuide:
+      "Echinacea purpurea is unmistakable as a purple coneflower: large daisy-like heads with drooping lavender-pink ray petals surrounding a spiny, prominent orange-brown central cone that persists long after petals fall. Leaves are lance-shaped and rough-textured. Chewing a piece of root causes a strong tingling-numbing sensation on the tongue — a definitive chemical test for genuine echinacea.",
+    lookalikes: [],
   },
   {
     id: "ashwagandha",
@@ -1402,6 +1579,9 @@ export const products: Product[] = [
     reviews: 108,
     origin: "Certified organic — Pacific Northwest cultivated",
     regions: ["Pacific Northwest", "Southwest", "West Coast"],
+    identificationGuide:
+      "Ashwagandha grows as a shrub 30–75 cm tall with soft, slightly hairy ovate leaves 4–10 cm long. Small, inconspicuous greenish flowers yield papery husks containing bright red-orange berries (similar to small tomatillos, which it is related to). The root, when fresh, has a distinctive horse-like earthy smell — which is the literal meaning of its Sanskrit name.",
+    lookalikes: [],
   },
   {
     id: "spearmint",
@@ -1444,6 +1624,14 @@ export const products: Product[] = [
     reviews: 52,
     origin: "Local garden grown (pesticide-free)",
     regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
+    identificationGuide:
+      "Spearmint has lance-shaped, bright green, pointed leaves 4–8 cm with finely serrated edges and prominent veins. Stems are square (mint-family characteristic). Crushing a leaf releases a clean, sweet mint aroma without the intense cooling burn of peppermint. Grows vigorously in moist soil, spreading by underground runners. The sweet (not sharp) minty smell distinguishes it from peppermint.",
+    lookalikes: [
+      {
+        name: "Other mint species (Mentha spp.)",
+        warning: "All mint species are safe to consume. Peppermint (M. × piperita) has a much stronger, cooling menthol scent. Apple mint (M. suaveolens) has rounder, fuzzier leaves. No toxic lookalikes.",
+      },
+    ],
   },
   {
     id: "red-clover",
@@ -1486,9 +1674,10 @@ export const products: Product[] = [
     reviews: 47,
     origin: "Local meadow wildcrafted (pesticide-free)",
     regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+    identificationGuide:
+      "Red clover has globe-shaped pink-to-magenta flower heads 2–4 cm wide, and the characteristic three-leaflet clover leaves with a distinctive pale V-shaped or crescent marking on each leaflet. The flower heads are oval or egg-shaped, not flat. Grows in meadows, roadsides, and lawns. The pink globe flower and marked three-leaflet leaves are unmistakable.",
+    lookalikes: [],
   },
-
-  // ── NEW NUTS ──────────────────────────────────────────
   {
     id: "american-chestnut",
     name: "American Chestnut",
@@ -1530,6 +1719,14 @@ export const products: Product[] = [
     reviews: 41,
     origin: "Eastern Appalachian restoration grove harvest",
     regions: ["Northeast", "Southeast", "Midwest"],
+    identificationGuide:
+      "American chestnut leaves are lance-shaped with prominent pointed teeth along the margins — each tooth has a bristle tip. The spiny green burs (3–6 cm) that contain 2–3 glossy brown nuts are extremely distinctive — they look like sea urchins and are viciously spiny. The nuts inside are flat on one side and domed on the other. Found in restoration groves and some wild stands in Appalachia.",
+    lookalikes: [
+      {
+        name: "Horse Chestnut (Aesculus hippocastanum)",
+        warning: "DANGEROUS: Horse chestnut nuts are glossy brown and similar looking but emerge from a spiny husk with fewer, blunter spines. The leaves are compound (5–7 leaflets) not simple. Horse chestnut nuts are highly toxic — causing vomiting, weakness, and paralysis.",
+      },
+    ],
   },
   {
     id: "hazelnut",
@@ -1572,6 +1769,9 @@ export const products: Product[] = [
     reviews: 53,
     origin: "Great Lakes region local harvest",
     regions: ["Midwest", "Northeast", "Great Plains"],
+    identificationGuide:
+      "American hazelnut is a multi-stemmed shrub 1–3 m tall with rounded, doubly serrated leaves 5–12 cm that have a heart-shaped base. The nuts are enclosed in ragged, leafy husks (involucres) with fringe-tipped edges. The nuts themselves are round to slightly elongated, brown, and smaller than commercial hazelnuts. Male catkins appear in late winter before the leaves.",
+    lookalikes: [],
   },
   {
     id: "white-oak-acorn",
@@ -1614,9 +1814,15 @@ export const products: Product[] = [
     reviews: 36,
     origin: "Eastern Woodlands wild harvest (autumn)",
     regions: ["Midwest", "Northeast", "Southeast"],
+    identificationGuide:
+      "White oak acorns are smaller than red oak acorns (1.5–3 cm), rounded, and mature in a single season (they're sweet enough to eat raw or with minimal processing). The cap covers 1/4 to 1/3 of the nut and has flattish, knobby scales. White oak leaves have rounded lobes (no pointed tips), unlike red oak which has sharp-tipped lobes. The rounded lobes are the key identification for white oak.",
+    lookalikes: [
+      {
+        name: "Red Oak Acorns (Quercus rubra group)",
+        warning: "Red oak acorns are much more bitter and require more extensive leaching to remove tannins before use as food. Not dangerous but unpalatable and mildly astringent if eaten without processing.",
+      },
+    ],
   },
-
-  // ── FRUITS ────────────────────────────────────────────
   {
     id: "pawpaw",
     name: "Pawpaw",
@@ -1658,6 +1864,9 @@ export const products: Product[] = [
     reviews: 61,
     origin: "Eastern Woodlands wild harvest",
     regions: ["Midwest", "Southeast", "Northeast"],
+    identificationGuide:
+      "Pawpaw grows as a slender understory tree with the largest simple leaves of any native North American tree — they droop conspicuously, are 20–35 cm long, smooth, dark green, and smell unpleasantly like bell pepper when crushed. The fruit (3–15 cm, yellow-green to yellow when ripe) is clustered and smells of tropical custard when ripe. Found in rich bottomland forests.",
+    lookalikes: [],
   },
   {
     id: "serviceberry",
@@ -1700,6 +1909,9 @@ export const products: Product[] = [
     reviews: 44,
     origin: "Northeast and Great Lakes wild harvest",
     regions: ["Northeast", "Midwest", "Great Plains"],
+    identificationGuide:
+      "Serviceberry is a shrub or small tree that blooms with masses of delicate white 5-petaled flowers in very early spring — often before leaves fully open. The small (1–1.5 cm) round berries ripen from red to purple-black in June. Leaves are oval with fine teeth and may have a slightly bluish sheen. The berries have a 5-pointed crown at the tip (the persistent calyx), like a miniature apple.",
+    lookalikes: [],
   },
   {
     id: "rose-hips",
@@ -1742,6 +1954,9 @@ export const products: Product[] = [
     reviews: 68,
     origin: "Local woodland edge wildcrafted (post-frost harvest)",
     regions: ["Pacific Northwest", "Rocky Mountains", "Northeast", "Midwest"],
+    identificationGuide:
+      "Rose hips are the round to oval fruits of Rosa species, red to orange-red when ripe, 1–2 cm long, with a distinctive persistent 5-pointed star of dried sepals at the tip. They remain on thorny stems through winter. The hips contain many seeds surrounded by a fibrous, slightly hairy layer inside — slice open before processing to remove the fibers and seeds.",
+    lookalikes: [],
   },
   {
     id: "hawthorn-berries",
@@ -1784,6 +1999,9 @@ export const products: Product[] = [
     reviews: 55,
     origin: "Local hedgerow wildcrafted (autumn harvest)",
     regions: ["Pacific Northwest", "Northeast", "Midwest"],
+    identificationGuide:
+      "Hawthorn berries (haws) are small (8–12 mm), deep red to dark red, oval fruits in dense clusters on very thorny branches. Inside each berry is a single hard seed (some species 1–5 seeds). The berries persist through winter. The tree is identified by its sharp, stout thorns 1–3 cm long, which are the most distinctive feature alongside the clusters of red berries.",
+    lookalikes: [],
   },
   {
     id: "persimmon",
@@ -1826,6 +2044,9 @@ export const products: Product[] = [
     reviews: 38,
     origin: "Southeast and Midwest wild harvest (post-frost)",
     regions: ["Southeast", "Midwest", "Great Plains"],
+    identificationGuide:
+      "Wild persimmon fruits are distinctive orange spheres 2–4 cm across on a small to medium tree with blocky, deeply furrowed gray-black bark that breaks into rough squares. Unripe fruits are firm, very astringent, and starchy. After the first frost, they soften and turn fully orange to orange-brown. The persimmon's deeply furrowed checkered bark pattern is one of the most distinctive bark textures in the eastern forest.",
+    lookalikes: [],
   },
   {
     id: "gooseberry",
@@ -1868,6 +2089,9 @@ export const products: Product[] = [
     reviews: 33,
     origin: "Pacific Northwest and Northeast local harvest",
     regions: ["Pacific Northwest", "Northeast", "Midwest"],
+    identificationGuide:
+      "Gooseberry shrubs have 3–5 lobed leaves resembling small maple leaves, and bear fruits singly or in pairs at leaf axils (not in clusters). The fruits are oval, 1–2 cm, with distinctive longitudinal green stripes, and ripen from green through yellow to red or purple depending on variety. The shrub has sharp, 3-pronged spines at each node — a key identifier.",
+    lookalikes: [],
   },
 
 ];

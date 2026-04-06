@@ -34,7 +34,25 @@ const tabDefs = [
   { id: "spiritual", label: "Spiritual Uses", emoji: "🔮" },
   { id: "science", label: "Scientific Benefits", emoji: "🔬" },
   { id: "howtouse", label: "How to Use", emoji: "🫖" },
+  { id: "identify", label: "Identify", emoji: "🌱" },
 ];
+
+/** Derives a short plant-part label from the imageAlt string. */
+function extractPlantPart(imageAlt: string): string {
+  const lower = imageAlt.toLowerCase();
+  if (lower.includes("leaves") || lower.includes("leaf") || lower.includes("foliage")) return "Leaves";
+  if (lower.includes("berries") || lower.includes("berry")) return "Berries";
+  if (lower.includes("root") || lower.includes("roots")) return "Root";
+  if (lower.includes("flower") || lower.includes("bloom") || lower.includes("blossom")) return "Flower";
+  if (lower.includes("seeds") || lower.includes("seed")) return "Seeds";
+  if (lower.includes("nuts") || lower.includes("nut")) return "Nuts";
+  if (lower.includes("fruit") || lower.includes("fruits")) return "Fruit";
+  if (lower.includes("bark")) return "Bark";
+  if (lower.includes("pods") || lower.includes("pod")) return "Pods";
+  if (lower.includes("frond")) return "Fronds";
+  if (lower.includes("flour")) return "Flour";
+  return "Whole Plant";
+}
 
 export default async function ProductDetailPage({
   params,
@@ -85,7 +103,7 @@ export default async function ProductDetailPage({
               />
               <Image
                 src={product.image}
-                alt={product.name}
+                alt={product.imageAlt}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -112,14 +130,25 @@ export default async function ProductDetailPage({
               </div>
             </div>
 
+            {/* Phase 3 — Photo Caption */}
+            <div className="text-center px-1">
+              <p className="text-sm italic text-stone-500 leading-snug">
+                &ldquo;{product.imageAlt}&rdquo;
+              </p>
+              <p className="text-xs text-stone-400 mt-0.5 italic">
+                — <span className="font-medium">{product.scientificName}</span>
+              </p>
+            </div>
+
             {/* Botanical stat ribbon */}
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
               {[
                 { icon: "📍", label: "Origin", value: product.origin },
                 { icon: meta.emoji, label: "Category", value: meta.label },
                 { icon: "⭐", label: "Rating", value: `${product.rating.toFixed(1)} (${product.reviews})` },
                 { icon: "📦", label: "Unit", value: product.unit },
                 { icon: product.inStock ? "✅" : "❌", label: "Stock", value: product.inStock ? "In Stock" : "Out of Stock" },
+                { icon: "🌿", label: "Plant Part", value: extractPlantPart(product.imageAlt) },
               ].map(({ icon, label, value }) => (
                 <div
                   key={label}
@@ -256,6 +285,8 @@ export default async function ProductDetailPage({
             scientificBenefits={product.scientificBenefits}
             howToUse={product.howToUse}
             origin={product.origin}
+            identificationGuide={product.identificationGuide}
+            lookalikes={product.lookalikes}
           />
         </div>
 
