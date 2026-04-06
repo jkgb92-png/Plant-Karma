@@ -809,6 +809,8 @@ export const products: Product[] = [
     origin: "Florida woodland wild-harvest",
     regions: ["Southeast"],
   },
+  {
+    id: "yaupon-holly",
     name: "Yaupon Holly",
     scientificName: "Ilex vomitoria",
     category: "herb",
@@ -895,7 +897,980 @@ export const products: Product[] = [
   },
 
   // ── ADDITIONAL WILD WEEDS ──────────────────────────────
+  {
+    id: "yarrow",
+    name: "Yarrow",
+    scientificName: "Achillea millefolium",
+    category: "weed",
+    price: 11.99,
+    unit: "1.5 oz dried herb",
+    image:
+      "https://images.unsplash.com/photo-1597328125219-1c91d3d1e2b7?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Yarrow flat-topped white flower clusters with feathery leaves",
+    gradient: "from-stone-400 to-white",
+    emoji: "🌸",
+    tagline: "Achilles\' wound-sealing secret from the battlefield.",
+    highlights: [
+      "Named for Achilles — the supreme warrior herb for courage and protection.",
+      "Achilletin staunches bleeding and reduces wound-healing time in clinical studies.",
+    ],
+    shortDescription:
+      "The warrior\'s herb — stops bleeding, clears fever, and strengthens boundaries.",
+    description:
+      "Yarrow (Achillea millefolium) is one of the oldest medicinal plants on Earth — pollen found in Neanderthal burial sites suggests it was used over 60,000 years ago. Named for the legend of Achilles, who used it to staunch the bleeding wounds of his soldiers, yarrow is simultaneously a wound herb, fever remedy, digestive bitter, and energetic boundary-setter.",
+    spiritualUses: [
+      "Named for the legendary warrior Achilles — burned or carried for courage, protection, and strength before challenges.",
+      "Used in I Ching divination — the dried stalks are the traditional casting tool of Chinese oracle practice.",
+      "Hung at doorways and windows in folk traditions across Europe and North America to ward off evil and psychic attack.",
+      "Worn in wedding bouquets in old European custom to ensure seven years of love — a powerful love and fidelity herb.",
+    ],
+    scientificBenefits: [
+      "Achilletin and other alkaloids actively promote blood clotting — effective topically for cuts and nosebleeds.",
+      "Potent diaphoretic action induces sweating to break fevers by promoting peripheral circulation.",
+      "Bitter sesquiterpene lactones stimulate digestive enzyme secretion and bile flow, relieving bloating.",
+      "Anti-inflammatory azulene reduces histamine response and soothes inflamed skin.",
+    ],
+    howToUse:
+      "Brew as a hot tea to break fevers. Apply as a strong poultice directly to bleeding wounds. Combine with elderflower and peppermint in the classic fever tea blend.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 64,
+    origin: "Local meadow & hillside wildcrafted",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+  },
+  {
+    id: "yellow-dock",
+    name: "Yellow Dock",
+    scientificName: "Rumex crispus",
+    category: "weed",
+    price: 10.99,
+    unit: "2 oz dried root",
+    image:
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Yellow dock plant with curly leaves and rusty brown seed clusters",
+    gradient: "from-yellow-700 to-amber-500",
+    emoji: "🌿",
+    tagline: "Deep roots, deep iron — the great blood builder.",
+    highlights: [
+      "Liver-cleansing root of old herbalism — draws out stored toxins and stuck bile.",
+      "One of the highest plant sources of bioavailable iron — critical for anemia and fatigue.",
+    ],
+    shortDescription:
+      "The mighty blood-builder — restores iron, cleanses the liver, and heals the skin.",
+    description:
+      "Yellow Dock (Rumex crispus) is the forgotten giant of blood medicine. Its long yellow taproot is rich in anthraquinones that stimulate bile production and liver detoxification, and contains significant iron along with tannins that reduce intestinal inflammation. As a blood purifier in traditional herbalism, yellow dock addresses skin conditions at their root — the liver. It is especially powerful combined with nettles for anemia.",
+    spiritualUses: [
+      "Used in money-drawing spells in American folk magic — the seeds scattered at a threshold to draw prosperity.",
+      "The long taproot symbolizes reaching deep into the earth for hidden resources and buried gifts.",
+      "Associated with Jupiter and the liver in astrological herbalism — used to support optimism and expansive thinking.",
+      "Carried in sachets to support legal matters and ensure fair outcomes in disputes and negotiations.",
+    ],
+    scientificBenefits: [
+      "Contains up to 50mg of iron per 100g dried root — among the highest plant sources.",
+      "Anthraquinone glycosides (emodin, chrysophanol) stimulate bile flow and hepatic detoxification pathways.",
+      "Clinical use for chronic constipation — gentle laxative action without griping or cramping effects.",
+      "Oxalate-bound tannins reduce gut inflammation and improve iron absorption from the intestinal lining.",
+    ],
+    howToUse:
+      "Simmer 1 tsp dried root in 2 cups water for 20 minutes as a decoction. Take 1/2 cup 2x daily as an iron and liver tonic. Combine with nettles and molasses for a classic blood-building tonic syrup.",
+    inStock: false,
+    featured: false,
+    rating: 4.6,
+    reviews: 47,
+    origin: "Local roadsides and field edges wildcrafted",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast", "Southeast"],
+  },
+  {
+    id: "burdock",
+    name: "Burdock Root",
+    scientificName: "Arctium lappa",
+    category: "weed",
+    price: 12.99,
+    unit: "2 oz dried root",
+    image:
+      "https://images.unsplash.com/photo-1629621518651-5f95428cb6e4?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Burdock large basal leaves with dark brown burr seed heads",
+    gradient: "from-stone-700 to-amber-700",
+    emoji: "🌱",
+    tagline: "The deepest cleanser — roots that heal from the inside out.",
+    highlights: [
+      "Planetary herb of Saturn — purifies blood, skin, and karmic burdens alike.",
+      "Inulin-rich root feeds beneficial gut bacteria and balances blood sugar levels.",
+    ],
+    shortDescription:
+      "The classic blood purifier — deep liver and lymph cleanser for skin and vitality.",
+    description:
+      "Burdock (Arctium lappa) is one of the most powerful blood and lymph cleansers in the entire herbal pharmacopoeia. Its long taproot is packed with inulin prebiotic fiber, polyacetylenes, and bitter compounds that drive liver and lymphatic detoxification. Chronic skin conditions — acne, eczema, psoriasis — often respond dramatically to consistent burdock use because it addresses the underlying blood and lymph congestion. A cornerstone of traditional medicine worldwide.",
+    spiritualUses: [
+      "Hung over thresholds to ward off negative energies and protect the home from misfortune in Celtic traditions.",
+      "As a Saturn herb, burdock is used in banishing and release rituals — clearing old patterns and stuck grief.",
+      "The burr seeds symbolize tenacity and the ability to cling to purpose — carried as a talisman for perseverance.",
+      "Used in cord-cutting rituals: the root placed at a crossroads to release what no longer serves.",
+    ],
+    scientificBenefits: [
+      "Inulin content (up to 45% of carbohydrate) is one of the richest plant sources — strongly prebiotic for gut flora.",
+      "Polyacetylenes demonstrate significant antifungal and antibacterial activity.",
+      "Arctigenin — a lignan in burdock — shows anti-tumor and anti-inflammatory activity in multiple laboratory studies.",
+      "Stimulates lymphatic drainage and reduces lymphedema, supporting clearance of metabolic waste.",
+    ],
+    howToUse:
+      "Decoct 1–2 tsp dried root in 2 cups water for 20 minutes. Drink 1–2 cups daily as a long-term detox tonic. Add to soups and stir-fries fresh as gobo. Combine with dandelion root and red clover for a lymph cleanse blend.",
+    inStock: false,
+    featured: true,
+    rating: 4.7,
+    reviews: 58,
+    origin: "Local disturbed land wildcrafted",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+  },
+  {
+    id: "st-johns-wort",
+    name: "St. John\'s Wort",
+    scientificName: "Hypericum perforatum",
+    category: "weed",
+    price: 13.99,
+    unit: "1.5 oz dried flower & bud",
+    image:
+      "https://images.unsplash.com/photo-1597860963770-b7b9b517d2e4?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "St. John's Wort bright yellow flowers with translucent dotted petals",
+    gradient: "from-yellow-500 to-orange-400",
+    emoji: "☀️",
+    tagline: "The sun\'s own medicine — light through darkness.",
+    highlights: [
+      "The ancient Midsummer herb — burned on bonfires to purify and call back the light.",
+      "Multiple meta-analyses confirm efficacy equal to SSRIs for mild-to-moderate depression.",
+    ],
+    shortDescription:
+      "Nature\'s antidepressant — centuries-proven sunshine herb for mood and nerves.",
+    description:
+      "St. John\'s Wort (Hypericum perforatum) is perhaps the most extensively studied medicinal herb of the 20th century and the Western world\'s premier plant remedy for depression. Blooming at the summer solstice, its bright yellow flowers turn any oil or tincture a deep blood-red when infused — the hypericin pigment responsible for both its color and its medicine. With over 29 clinical trials confirming its efficacy, it is prescribed as a first-line treatment for depression in Germany.",
+    spiritualUses: [
+      "The quintessential Midsummer herb — burned on solstice bonfires across Europe to purify and call back the light.",
+      "Worn as a protective charm against dark spirits, melancholy, and psychic attack in European folk magic.",
+      "Hung above doorways on St. John\'s Eve to prevent witchcraft and protect the household through winter.",
+      "Associated with the sun — used in rituals to restore joy, clarity, and vital force to those lost in darkness.",
+    ],
+    scientificBenefits: [
+      "Multiple Cochrane-reviewed meta-analyses confirm efficacy equivalent to SSRIs for mild-to-moderate depression.",
+      "Hypericin inhibits reuptake of serotonin, dopamine, and norepinephrine — a unique triple-reuptake mechanism.",
+      "Hyperforin has demonstrated potent anti-inflammatory activity against COX-1 and COX-2 pathways.",
+      "Infused oil applied topically accelerates nerve regeneration and reduces neuropathic pain in clinical studies.",
+    ],
+    howToUse:
+      "Brew 1 tsp dried flowers in hot water for 10 minutes, 3 cups daily. Benefits for depression appear after 4–6 weeks. Caution: interacts with many medications — consult a healthcare provider.",
+    inStock: false,
+    featured: true,
+    rating: 4.9,
+    reviews: 92,
+    origin: "Local hillside wildcrafted (peak bloom harvest)",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+  },
+  {
+    id: "plantain-weed",
+    name: "Plantain (Broadleaf)",
+    scientificName: "Plantago major",
+    category: "weed",
+    price: 8.99,
+    unit: "1.5 oz dried leaf",
+    image:
+      "https://images.unsplash.com/photo-1628347785010-f2dde6ad70af?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Broadleaf plantain rosette with ribbed oval leaves and seed spikes",
+    gradient: "from-lime-700 to-green-500",
+    emoji: "🍃",
+    tagline: "The world\'s most overlooked first-aid kit underfoot.",
+    highlights: [
+      "Called White Man\'s Foot — followed settlers everywhere as a potent healing ally.",
+      "Aucubin and allantoin accelerate wound healing and reduce inflammation on contact.",
+    ],
+    shortDescription:
+      "The sidewalk healer — instant sting relief, wound closure, and lung tonic.",
+    description:
+      "Broadleaf Plantain (Plantago major) is arguably the world\'s most accessible medicinal plant — it grows in every lawn, sidewalk crack, and trampled pathway on every continent. It is the original first aid kit: chewed and applied to bee stings, spider bites, and minor cuts, the raw leaf provides immediate, measurable relief. Internally it soothes inflamed mucous membranes. One of the nine sacred herbs in the Anglo-Saxon Lacnunga manuscript.",
+    spiritualUses: [
+      "Called The Way-Broad in Anglo-Saxon herbal tradition — one of the nine sacred herbs of the Lacnunga manuscript.",
+      "Carried by travelers for protection and safe passage — its name and nature invoke finding your path.",
+      "Used to break hexes and remove persistent bad luck in Appalachian and Ozark folk magic.",
+      "A healing herb of the common people — used in rituals to restore humility, groundedness, and resilience.",
+    ],
+    scientificBenefits: [
+      "Aucubin (an iridoid glycoside) demonstrates potent anti-inflammatory, antimicrobial, and wound-healing activity.",
+      "Allantoin stimulates cell proliferation, accelerating wound closure and tissue repair topically and internally.",
+      "Mucilage content soothes inflamed bronchial passages — one of the best herbs for irritating dry cough.",
+      "Demonstrated inhibition of Helicobacter pylori — traditionally used for gastric ulcers and gut inflammation.",
+    ],
+    howToUse:
+      "Chew a fresh leaf and apply directly to insect stings and minor wounds for immediate relief. Brew dried leaf as a respiratory tea for cough and sore throat. Add young leaves to salads.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 53,
+    origin: "Local pathside wildcrafted (pesticide-free zones)",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Great Plains", "Midwest", "Southeast", "Northeast"],
+  },
+  {
+    id: "mugwort",
+    name: "Mugwort",
+    scientificName: "Artemisia vulgaris",
+    category: "weed",
+    price: 14.99,
+    unit: "1 oz dried leaf & flower",
+    image:
+      "https://images.unsplash.com/photo-1597876659237-58a46a23d17e?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Mugwort silvery-green leaves with white undersides in tall stand",
+    gradient: "from-stone-600 to-emerald-600",
+    emoji: "🌙",
+    tagline: "Artemis\'s herb — where the dream world meets the waking.",
+    highlights: [
+      "The premier dream herb — used for lucid dreaming and shamanic vision work across cultures.",
+      "Thujone and camphor act on GABA receptors, creating mild sedation and altered dream states.",
+    ],
+    shortDescription:
+      "The dream herb of Artemis — opens the gates of the night, sharpens vision.",
+    description:
+      "Mugwort (Artemisia vulgaris) is one of the most spiritually revered plants in the world — named for Artemis, the Greek goddess of the moon and wild places. In Chinese medicine it is the primary herb of moxibustion. Among shamanic practitioners worldwide, it is smoked or burned to open the gates of dream and vision. Its silvery, camphor-scented leaves grow abundantly along roadsides throughout the temperate world.",
+    spiritualUses: [
+      "The preeminent herb for lucid dreaming — stuffed into dream pillows or drunk as tea before sleep to enhance vividness.",
+      "Burned as a smudge to cleanse spaces of psychic residue and open pathways between worlds.",
+      "Associated with Artemis and Diana — used in full moon rituals to connect with feminine wisdom and wild nature.",
+      "Used in shamanic traditions across Asia, Europe, and the Americas to open inner sight and facilitate journeying.",
+    ],
+    scientificBenefits: [
+      "Thujone acts on GABA-A receptors, producing mild sedation, reduced anxiety, and altered dream-stage sleep.",
+      "Used in moxibustion in Traditional Chinese Medicine — documented clinical efficacy for stimulating acupuncture points.",
+      "Artemisia compounds demonstrate broad antiparasitic activity (related to artemisinin from A. annua).",
+      "Bitter sesquiterpenes stimulate digestive enzymes and bile secretion — effective for sluggish digestion.",
+    ],
+    howToUse:
+      "Brew a mild tea (1/2 tsp dried leaf) 30 minutes before bed for vivid dreams. Burn as a smudge or use in a dream pillow with lavender. Caution: avoid in pregnancy — strong uterine stimulant.",
+    inStock: false,
+    featured: true,
+    rating: 4.9,
+    reviews: 73,
+    origin: "Local roadside and woodland edge wildcrafted",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
+  },
+  {
+    id: "wild-violet",
+    name: "Wild Violet",
+    scientificName: "Viola sororia",
+    category: "weed",
+    price: 9.99,
+    unit: "1.5 oz dried leaf & flower",
+    image:
+      "https://images.unsplash.com/photo-1604014236576-c91f05d26d8b?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Wild violet deep purple flowers with heart-shaped leaves in forest floor",
+    gradient: "from-violet-600 to-purple-400",
+    emoji: "💜",
+    tagline: "Love\'s own medicine — soft, sweet, and powerfully healing.",
+    highlights: [
+      "A Venusian herb — carried in love spells to attract gentle, enduring affection.",
+      "Among the highest plant sources of Vitamins A and C — 3x more than oranges by weight.",
+    ],
+    shortDescription:
+      "Spring\'s first purple jewel — nutrient-dense and deeply soothing for body and heart.",
+    description:
+      "Wild Violet (Viola sororia) carpets forest floors with heart-shaped leaves and deep purple blooms each spring. The entire plant is edible — flowers in salads, leaves in teas, root medicinally. A gentle, deeply healing herb for lung, skin, and heart that is also one of the most nutritionally rich spring foods available.",
+    spiritualUses: [
+      "A Venusian herb — used in love spells, heart-opening rituals, and work to attract gentle, lasting love.",
+      "Worn or carried to ease grief and sorrow — its purple color and heart-shaped leaves associate it with healing heartbreak.",
+      "Used in sleep pillows to encourage peaceful sleep and sweet dreams in Celtic and English folk traditions.",
+      "Associated with Aphrodite and the liminal season of spring — used in rituals of renewal and return.",
+    ],
+    scientificBenefits: [
+      "Leaves contain three times more Vitamin C than oranges per gram — one of the richest plant sources available wild.",
+      "Beta-carotene content rivals carrots — exceptional for eye health, skin, and immune function.",
+      "Mucilaginous quality soothes inflamed mucous membranes in throat, lungs, and digestive tract.",
+      "Rutin — a flavonoid abundant in violet — strengthens capillary walls and reduces bruising.",
+    ],
+    howToUse:
+      "Add fresh leaves and flowers to spring salads. Brew as a gentle lung and lymph tea. Apply cooled tea as a topical wash for inflamed skin. Blend with cleavers and clover for a spring lymph tonic.",
+    inStock: false,
+    featured: false,
+    rating: 4.6,
+    reviews: 39,
+    origin: "Local woodland and garden wildcrafted (spring harvest)",
+    regions: ["Midwest", "Northeast", "Southeast"],
+  },
+  {
+    id: "cleavers",
+    name: "Cleavers",
+    scientificName: "Galium aparine",
+    category: "weed",
+    price: 9.99,
+    unit: "1.5 oz dried herb",
+    image:
+      "https://images.unsplash.com/photo-1598887141556-07e0d1e2d7a1?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Cleavers sticky green stems with whorled leaves clinging to wire fence",
+    gradient: "from-lime-600 to-teal-400",
+    emoji: "🌿",
+    tagline: "Spring\'s sticky healer — clears the lymph and the spirit.",
+    highlights: [
+      "A spring purification herb — eaten to clear winter stagnation from body and energy.",
+      "The premier lymphatic herb — clinically observed to reduce swollen lymph nodes.",
+    ],
+    shortDescription:
+      "The sticky spring detoxer — the finest lymphatic herb growing in your hedge.",
+    description:
+      "Cleavers (Galium aparine) — the famously clingy spring weed that sticks to clothing and pets — reflects its traditional herbal action: it moves and clears the lymphatic system. Cleavers is widely regarded by herbalists as the single best herb for the lymphatic system — it decongests swollen lymph nodes and is a primary remedy for skin conditions, chronic infections, and post-illness recovery.",
+    spiritualUses: [
+      "As a spring purification herb, eating fresh cleavers at the spring equinox is a traditional act of cleansing.",
+      "Its clinging nature symbolizes persistence, tenacity, and the power of gentle but relentless action.",
+      "Used in folk traditions to enhance relationships — its stickiness invoked to strengthen bonds and loyalty.",
+      "Associated with the fae and woodland spirits in British folklore — left as an offering to the little people of hedgerows.",
+    ],
+    scientificBenefits: [
+      "Asperuloside (an iridoid glycoside) drives lymphatic activity, reducing lymphedema and congested lymph nodes.",
+      "Strong diuretic action flushes urinary tract — used traditionally for cystitis and water retention.",
+      "Coumarins and tannins produce mild blood-thinning effects, supporting healthy circulation.",
+      "Rich in silica — supports connective tissue, skin collagen, and the integrity of lymphatic vessel walls.",
+    ],
+    howToUse:
+      "Best used fresh — cold-infuse overnight in water for a potent lymphatic tonic. Juice fresh spring stems directly. Combine with wild violet and burdock for a complete spring cleanse.",
+    inStock: false,
+    featured: false,
+    rating: 4.5,
+    reviews: 34,
+    origin: "Local hedgerow and woodland wildcrafted (spring)",
+    regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
+  },
 
+  // ── NEW HERBS ──────────────────────────────────────────
+  {
+    id: "lavender",
+    name: "Lavender",
+    scientificName: "Lavandula angustifolia",
+    category: "herb",
+    price: 11.99,
+    unit: "1 oz dried flower",
+    image:
+      "https://images.unsplash.com/photo-1499578124509-1611b77778c5?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Rows of purple lavender flowers in full bloom under bright blue sky",
+    gradient: "from-purple-500 to-indigo-400",
+    emoji: "💜",
+    tagline: "The soul\'s own perfume — calm, clean, and radiant.",
+    highlights: [
+      "Sacred to Hecate and used in ancient Roman purification baths as a cleanser of body and spirit.",
+      "Linalool directly modulates GABA-A receptors producing measurable anxiolytic and sleep-improving effects.",
+    ],
+    shortDescription:
+      "The world\'s most beloved herb — calming, uplifting, and universally healing.",
+    description:
+      "Lavender (Lavandula angustifolia) is the most widely used aromatic herb in the world. Its name derives from the Latin lavare (to wash) — Romans added it to their public baths. Linalool and linalyl acetate account for most therapeutic activity, directly modulating GABA receptors to produce calm without sedation. One of the most comprehensively researched herbs on the planet.",
+    spiritualUses: [
+      "Sacred to Hecate in ancient Greece — used in purification rites to cleanse sacred spaces and prepare for ritual.",
+      "Strewn on floors and burned in censers in medieval Europe to drive away disease and negative spirits.",
+      "Worn in small sachets over the heart to calm anxiety, attract love, and protect against harmful intent.",
+      "Placed under pillows to induce peaceful sleep, sweet dreams, and access to psychic guidance at night.",
+    ],
+    scientificBenefits: [
+      "Linalool acts on GABA-A receptors, producing anxiolytic effects equivalent to low-dose benzodiazepines in studies.",
+      "Randomized controlled trial (silexan 80mg) showed significant improvement in generalized anxiety disorder.",
+      "Topical lavender oil accelerates wound healing and reduces scar formation via antimicrobial action.",
+      "Inhalation studies demonstrate reduced cortisol levels, lowered heart rate, and improved sleep quality.",
+    ],
+    howToUse:
+      "Brew 1 tsp dried flowers as a calming tea before bed. Add to bath water for full-body nervous system relaxation. Infuse in honey for a beautiful culinary lavender syrup.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 84,
+    origin: "Pacific Northwest farm grown",
+    regions: ["Pacific Northwest", "West Coast", "Southwest"],
+  },
+  {
+    id: "chamomile",
+    name: "German Chamomile",
+    scientificName: "Matricaria chamomilla",
+    category: "herb",
+    price: 10.99,
+    unit: "1 oz dried flower",
+    image:
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Chamomile white daisy flowers with yellow centers in a sunny field",
+    gradient: "from-yellow-400 to-amber-300",
+    emoji: "🌼",
+    tagline: "The gentlest touch in the herb garden — soothing all storms.",
+    highlights: [
+      "Dedicated to the sun in Norse tradition — used to protect crops and bless the harvest.",
+      "Apigenin binds to benzodiazepine receptors producing calm without the risk of dependence.",
+    ],
+    shortDescription:
+      "The mother herb — gentle enough for babies, powerful enough to calm deep anxiety.",
+    description:
+      "German Chamomile (Matricaria chamomilla) is the most-consumed medicinal herb on Earth — over one million cups are drunk every day. Its apple-scented flowers contain apigenin, bisabolol, chamazulene (which gives steam-distilled oil its brilliant blue color), and dozens of flavonoids. Chamomile calms without sedating, soothes without numbing, and heals without side effects.",
+    spiritualUses: [
+      "Dedicated to the sun in Norse tradition — Baldur\'s herb, used to protect crops and bless the summer harvest.",
+      "Used in money-drawing spells: washing hands in chamomile tea before business dealings is an old folk practice.",
+      "Burned or placed on altars to cleanse negative energy and invite peace, reconciliation, and gentle healing.",
+      "Given to agitated children and elders in folk medicine as both physical and spiritual calming medicine.",
+    ],
+    scientificBenefits: [
+      "Apigenin binds to benzodiazepine receptors producing anxiolytic effects without sedation or dependency.",
+      "Chamazulene and alpha-bisabolol are among the most potent anti-inflammatory compounds in the plant world.",
+      "Antispasmodic action relaxes smooth muscle throughout the digestive tract — effective for IBS and cramping.",
+      "Topical chamomile extract accelerates wound healing comparable to 1% hydrocortisone cream in clinical trials.",
+    ],
+    howToUse:
+      "Steep 2 tsp dried flowers for 5–10 minutes. Safe for all ages including infants (diluted). Combine with lemon balm for anxiety, or with peppermint for digestive relief.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 91,
+    origin: "Local farm grown (pesticide-free)",
+    regions: ["Pacific Northwest", "West Coast", "Rocky Mountains", "Midwest", "Northeast"],
+  },
+  {
+    id: "echinacea",
+    name: "Echinacea",
+    scientificName: "Echinacea purpurea",
+    category: "herb",
+    price: 16.99,
+    unit: "1.5 oz dried root & herb",
+    image:
+      "https://images.unsplash.com/photo-1597858520171-563a8e8b9925?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Echinacea purple coneflower with spiky orange-brown seed cone center",
+    gradient: "from-pink-600 to-purple-500",
+    emoji: "🌸",
+    tagline: "The prairie\'s immune fortress — powerful and uncompromising.",
+    highlights: [
+      "The most-used medicinal plant of the Great Plains nations — sacred healing ally.",
+      "Alkylamides activate cannabinoid receptor CB2 pathways — a direct immune modulator.",
+    ],
+    shortDescription:
+      "America\'s premier immune herb — the Great Plains\' most sacred healing plant.",
+    description:
+      "Echinacea (Echinacea purpurea) was the most widely used medicinal plant of the Great Plains Indigenous nations. Used by the Lakota, Cheyenne, and dozens of other nations for wounds and infections, it was the most widely prescribed medicine in the United States before antibiotics. Modern research confirms its multifaceted immune activity.",
+    spiritualUses: [
+      "The most sacred healing herb of the Lakota and many Great Plains nations — used to invoke the healing power of the land.",
+      "Added to ceremonial fires and healing ceremonies to call upon the spirit of strength and resilience.",
+      "Planted at the perimeter of sacred spaces as a guardian of health and a symbol of the earth\'s healing will.",
+      "Used in medicine bundles by many nations to protect against disease and strengthen warrior spirit.",
+    ],
+    scientificBenefits: [
+      "Alkylamides bind to cannabinoid CB2 receptors, directly modulating innate immune response and NK cell activity.",
+      "Polysaccharides activate macrophages — the body\'s first-line defenders against bacterial and viral infection.",
+      "Multiple meta-analyses confirm reduction in cold and flu incidence and duration with prophylactic use.",
+      "Caffeic acid derivatives (cichoric acid, echinacoside) provide antioxidant and antiviral activity.",
+    ],
+    howToUse:
+      "Take as a tincture or brew 1 tsp dried root as a decoction at first sign of illness. Use intensively for 7–10 days, then rest. Cycle 3 weeks on, 1 week off through cold season for prevention.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 76,
+    origin: "Great Plains local grow",
+    regions: ["Great Plains", "Midwest", "Rocky Mountains"],
+  },
+  {
+    id: "ashwagandha",
+    name: "Ashwagandha",
+    scientificName: "Withania somnifera",
+    category: "herb",
+    price: 18.99,
+    unit: "2 oz dried root powder",
+    image:
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Ashwagandha dried root powder in a wooden bowl with whole roots",
+    gradient: "from-amber-600 to-orange-500",
+    emoji: "🌰",
+    tagline: "The strength of a horse — ancient resilience in every root.",
+    highlights: [
+      "The royal Ayurvedic rasayana — used for millennia to bestow the strength of a stallion.",
+      "Withanolides reduce cortisol by 27% in double-blind trials while improving testosterone and thyroid function.",
+    ],
+    shortDescription:
+      "The supreme Ayurvedic adaptogen — builds strength, reduces cortisol, and restores vitality.",
+    description:
+      "Ashwagandha (Withania somnifera) — meaning smell of horse in Sanskrit — is Ayurveda\'s premier rasayana (rejuvenating tonic) used for over 3,000 years. It has been subjected to dozens of rigorous clinical trials confirming traditional uses: reducing cortisol, improving thyroid function, enhancing testosterone in men, and improving cognitive performance under stress.",
+    spiritualUses: [
+      "The supreme royal herb of Ayurveda — given to kings, warriors, and scholars to bestow strength and endurance.",
+      "Used in Vedic fire ceremonies as an offering to divine forces of vitality, strength, and longevity.",
+      "Associated with Lord Shiva in Hindu tradition — its grounding, fortifying energy mirrors the god\'s earthy power.",
+      "Given to those in spiritual practice to sustain the body through long fasts, rituals, and intensive meditation.",
+    ],
+    scientificBenefits: [
+      "Withanolides reduce serum cortisol by an average of 27% in double-blind, placebo-controlled trials.",
+      "Significantly improves testosterone levels, sperm quality, and fertility markers in men in randomized trials.",
+      "Thyroid-stimulating activity shown in clinical studies — increases T3 and T4 in subclinical hypothyroidism.",
+      "Improves reaction time, cognitive performance, and memory under stress in multiple human clinical trials.",
+    ],
+    howToUse:
+      "Take 300–600 mg standardized extract daily, or stir 1 tsp root powder into warm milk with honey and cardamom for traditional Ayurvedic moon milk. Best taken consistently for 4–8 weeks.",
+    inStock: false,
+    featured: true,
+    rating: 4.9,
+    reviews: 108,
+    origin: "Certified organic — Pacific Northwest cultivated",
+    regions: ["Pacific Northwest", "Southwest", "West Coast"],
+  },
+  {
+    id: "spearmint",
+    name: "Spearmint",
+    scientificName: "Mentha spicata",
+    category: "herb",
+    price: 9.99,
+    unit: "1.5 oz dried leaf",
+    image:
+      "https://images.unsplash.com/photo-1628357784840-f78b41ea4ade?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Spearmint fresh bright green pointed leaves close-up with water drops",
+    gradient: "from-emerald-500 to-cyan-400",
+    emoji: "🌿",
+    tagline: "Cool clarity, sweet breath, and a bright mind.",
+    highlights: [
+      "Mint of Venus — used in love spells and sensory rituals for its uplifting, attractive energy.",
+      "Antiandrogenic effect reduces excess androgens in women with PCOS in clinical trials.",
+    ],
+    shortDescription:
+      "The sweeter mint — uplifting, cooling, and perfect for digestion and focus.",
+    description:
+      "Spearmint (Mentha spicata) is the sweeter, gentler cousin of peppermint. Its primary compound carvone gives it a milder, warmer flavor. Modern research has uncovered surprising applications including hormonal modulation in PCOS. Its uplifting clear scent relieves headaches, improves focus, and freshens any space.",
+    spiritualUses: [
+      "A herb of Venus in the Western magical tradition — used in love spells, attraction rituals, and to sweeten relationships.",
+      "Burned or diffused to uplift mood, clear mental fog, and promote clear communication.",
+      "Used in ritual baths and floor washes to cleanse a space of negativity and invite fresh positive energy.",
+      "Given to travelers as a gift of protection and to ensure their safe and pleasant return.",
+    ],
+    scientificBenefits: [
+      "Two cups of spearmint tea daily shown to significantly reduce free androgens in women with PCOS over 30 days.",
+      "Rosmarinic acid and flavones inhibit 5-alpha-reductase, reducing conversion of testosterone to DHT.",
+      "Strong antioxidant and anti-inflammatory profile — inhibits cyclooxygenase enzymes in vitro.",
+      "Carminative action relieves intestinal gas, bloating, and IBS symptoms — one of the safest digestive herbs.",
+    ],
+    howToUse:
+      "Brew 1–2 tsp dried leaf as a refreshing digestive tea. For PCOS hormonal support, drink 2 cups daily consistently. Combine with lemon balm for a bright, calming herbal blend.",
+    inStock: false,
+    featured: false,
+    rating: 4.6,
+    reviews: 52,
+    origin: "Local garden grown (pesticide-free)",
+    regions: ["Pacific Northwest", "West Coast", "Midwest", "Northeast"],
+  },
+  {
+    id: "red-clover",
+    name: "Red Clover",
+    scientificName: "Trifolium pratense",
+    category: "herb",
+    price: 10.99,
+    unit: "1.5 oz dried flower",
+    image:
+      "https://images.unsplash.com/photo-1599666433232-8ec9bc97e461?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Red clover pink-purple globe flowers in a sunny summer meadow",
+    gradient: "from-pink-500 to-rose-400",
+    emoji: "🍀",
+    tagline: "Meadow medicine — blood purifier for the long journey.",
+    highlights: [
+      "A Druidic sacred plant — four-leaf clover is the mark of the seer and the blessed.",
+      "Isoflavone phytoestrogens reduce hot flash frequency by 44% in menopausal women.",
+    ],
+    shortDescription:
+      "Meadow\'s most nourishing bloom — a deep blood cleanser and hormonal balancer.",
+    description:
+      "Red Clover (Trifolium pratense) is a deeply medicinal legume with pink-magenta globe flowers rich in isoflavones that act as gentle phytoestrogens, making it one of the most studied herbs for menopause and cardiovascular protection. Herbalists have long used it as a blood purifier — its deep nourishment of the lymph and blood reflected in modern research.",
+    spiritualUses: [
+      "The sacred plant of the Druids — the four-leaf variety was a sign of prophetic sight and extraordinary blessing.",
+      "Placed in protective charm bags to avert misfortune and ensure good luck in all endeavors.",
+      "Used in prosperity spells and to attract financial abundance — scatter blossoms around the home.",
+      "A plant of love magic — used in potions and rituals to attract and maintain romantic partnerships.",
+    ],
+    scientificBenefits: [
+      "Isoflavones (formononetin, biochanin A) — clinical trials show 44% reduction in hot flash frequency in menopause.",
+      "Reduces LDL cholesterol and increases HDL in postmenopausal women — significant cardiovascular protection.",
+      "Anti-tumor activity against breast and prostate cancer cells demonstrated in laboratory and epidemiological studies.",
+      "Coumarins improve blood fluidity and reduce risk of arterial plaque formation.",
+    ],
+    howToUse:
+      "Brew 2 tsp dried flower heads as a mildly sweet, pleasant tea. Take consistently for hormonal and cardiovascular benefits — results appear after 4–8 weeks. Combine with sage for menopause support.",
+    inStock: false,
+    featured: false,
+    rating: 4.6,
+    reviews: 47,
+    origin: "Local meadow wildcrafted (pesticide-free)",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Great Plains", "Midwest", "Northeast"],
+  },
+
+  // ── NEW NUTS ──────────────────────────────────────────
+  {
+    id: "american-chestnut",
+    name: "American Chestnut",
+    scientificName: "Castanea dentata",
+    category: "nut",
+    price: 22.99,
+    unit: "3 oz dried nuts",
+    image:
+      "https://images.unsplash.com/photo-1572635148818-ef6fd45eb394?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "American chestnut glossy brown nuts partially out of spiky green burr",
+    gradient: "from-amber-800 to-yellow-600",
+    emoji: "🌰",
+    tagline: "The ghost tree\'s nut — resilience reborn from the forest floor.",
+    highlights: [
+      "The great Eastern forest spirit — its loss called ecological genocide by naturalists.",
+      "High in complex carbohydrates and low in fat — the original sustainable forest staple food.",
+    ],
+    shortDescription:
+      "The Eastern forest\'s lost king — a rare, resilient nut with extraordinary flavor.",
+    description:
+      "The American Chestnut was once the most important food tree in the Eastern Woodlands — so dominant that ecologists called it the redwood of the East. A fungal blight in the early 20th century killed nearly four billion trees in one of the most devastating ecological catastrophes in history. Today, breeding programs are painstakingly restoring blight-resistant varieties.",
+    spiritualUses: [
+      "Associated with remembrance, grief, and ecological healing — holding space for what was lost and honoring its restoration.",
+      "The great ancestors of the forest — used in land-healing ceremonies to honor the spirit of the Eastern woodland.",
+      "Eaten in autumn ceremonies as a connection to the bounty that once sustained millions of beings.",
+      "A symbol of resilience and return — used in rituals of renewal, hope, and ecological restoration work.",
+    ],
+    scientificBenefits: [
+      "Uniquely low in fat (only 1g per oz) and high in complex carbohydrates — a tree-based starch unmatched in the nut world.",
+      "Rich in Vitamin C (26mg per 100g, unusual in nuts) — supports immune function and collagen synthesis.",
+      "Significant potassium content (484mg/100g) supports cardiovascular health and blood pressure.",
+      "High dietary fiber content feeds beneficial gut microbiome and supports steady blood sugar levels.",
+    ],
+    howToUse:
+      "Roast over an open fire — score an X through the skin first. Grind into gluten-free flour for breads and pasta. Puree into a sweet, creamy spread. Add to soups and stews as a hearty starchy element.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 41,
+    origin: "Eastern Appalachian restoration grove harvest",
+    regions: ["Northeast", "Southeast", "Midwest"],
+  },
+  {
+    id: "hazelnut",
+    name: "American Hazelnut",
+    scientificName: "Corylus americana",
+    category: "nut",
+    price: 15.99,
+    unit: "3 oz shelled whole nuts",
+    image:
+      "https://images.unsplash.com/photo-1574349952435-d7db48e1cfc4?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "American hazelnut clusters with papery husk on branch",
+    gradient: "from-amber-600 to-yellow-500",
+    emoji: "🌰",
+    tagline: "The witch hazel\'s cousin — wisdom from the hedgerow.",
+    highlights: [
+      "The nut of wisdom in Celtic tradition — eating hazel grants prophetic sight.",
+      "Richest nut source of Vitamin E (15mg/100g) — potent antioxidant protection for cells and skin.",
+    ],
+    shortDescription:
+      "The wisdom nut — native hazelnut packed with heart-healthy fats and ancient lore.",
+    description:
+      "The American Hazelnut is a native shrub of the Eastern woodlands and prairies. In Celtic mythology, hazel was the tree of wisdom and poetic inspiration — the legendary Salmon of Knowledge fed upon hazel nuts that fell into a sacred pool, gaining all worldly wisdom.",
+    spiritualUses: [
+      "The tree of wisdom in Celtic tradition — hazel wands are the preferred tool for water dowsing and finding hidden things.",
+      "Hazelnuts eaten before divination to enhance psychic clarity and access hidden knowledge.",
+      "Associated with Mercury and Hermes — used in spells for communication, travel, and quick movement of ideas.",
+      "Planted at the boundary of a property as a protective hedgerow against intrusion and misfortune.",
+    ],
+    scientificBenefits: [
+      "Richest nut source of Vitamin E — 15mg per 100g provides nearly 100% of daily needs for antioxidant cell protection.",
+      "High oleic acid (monounsaturated fat) content lowers LDL cholesterol and raises HDL — equivalent to olive oil.",
+      "Rich in proanthocyanidins — flavonoids that reduce urinary tract infection risk and protect vascular walls.",
+      "Manganese-rich (nearly 100% DV per oz) — essential for bone density, cartilage formation, and antioxidant enzymes.",
+    ],
+    howToUse:
+      "Eat raw or lightly toasted. Grind into hazelnut butter. Press into a delicious culinary oil. Chop into granola, trail mix, and baked goods.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 53,
+    origin: "Great Lakes region local harvest",
+    regions: ["Midwest", "Northeast", "Great Plains"],
+  },
+  {
+    id: "white-oak-acorn",
+    name: "Acorn Flour (White Oak)",
+    scientificName: "Quercus alba",
+    category: "nut",
+    price: 17.99,
+    unit: "4 oz leached & dried flour",
+    image:
+      "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "White oak acorns with caps clustered on forest floor among autumn leaves",
+    gradient: "from-stone-600 to-amber-600",
+    emoji: "🍂",
+    tagline: "The original staff of life — the forest\'s own flour.",
+    highlights: [
+      "The sacred World Tree — under whose boughs laws were made and oaths were sworn.",
+      "Low-glycemic acorn flour provides sustained energy with exceptional mineral density.",
+    ],
+    shortDescription:
+      "The ancestral staple food — leached acorn flour from the mighty White Oak.",
+    description:
+      "White Oak acorns were the single most important plant food for Indigenous peoples across the Eastern United States — ground into flour, steeped into porridge, and processed into cooking oil. White oak acorns are the sweetest and least tannic of all North American oaks. The resulting flour is mild, slightly sweet, and rich in complex carbohydrates, healthy fats, and minerals.",
+    spiritualUses: [
+      "The oak is the World Tree of Norse, Celtic, and Greek traditions — sacred to Zeus, Jupiter, Thor, and the Druids.",
+      "Acorns carried as good luck charms to attract abundance, fertility, and strength in folk traditions worldwide.",
+      "The oak is a symbol of endurance, sovereignty, and sacred law — oaths sworn under oak trees in countless cultures.",
+      "Used in ceremony to honor the cyclical turning of the year — the acorn represents the potential of the great tree.",
+    ],
+    scientificBenefits: [
+      "Complex carbohydrates provide low-glycemic sustained energy — ideal for blood sugar regulation.",
+      "Rich in manganese, magnesium, potassium, and iron — a remarkably mineral-dense wild food.",
+      "Tannins (at food-safe levels after leaching) provide antimicrobial and anti-inflammatory action in the gut.",
+      "Gluten-free flour with high oleic acid — supporting cardiovascular health.",
+    ],
+    howToUse:
+      "Use leached acorn flour in pancakes, breads, and cookies (substitute 25–50% of regular flour). Mix into porridge for a hearty ancestral breakfast. Blend into soups as a thickener.",
+    inStock: false,
+    featured: false,
+    rating: 4.5,
+    reviews: 36,
+    origin: "Eastern Woodlands wild harvest (autumn)",
+    regions: ["Midwest", "Northeast", "Southeast"],
+  },
+
+  // ── FRUITS ────────────────────────────────────────────
+  {
+    id: "pawpaw",
+    name: "Pawpaw",
+    scientificName: "Asimina triloba",
+    category: "fruit",
+    price: 19.99,
+    unit: "2 oz dried fruit",
+    image:
+      "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Pawpaw yellow-green oblong fruits hanging from woodland branch",
+    gradient: "from-lime-600 to-yellow-400",
+    emoji: "🍈",
+    tagline: "America\'s forgotten tropical treasure hiding in plain sight.",
+    highlights: [
+      "The dream food of Indigenous nations — shared at councils and festivals of abundance.",
+      "Acetogenins unique to pawpaw are among the most potent natural cytotoxic compounds known.",
+    ],
+    shortDescription:
+      "North America\'s largest native fruit — tropical flavor from a temperate forest.",
+    description:
+      "The Pawpaw (Asimina triloba) is North America\'s largest native fruit — a relative of tropical custard apples that produces rich, custardy fruits tasting like a cross between banana, mango, and vanilla. Found wild in bottomland forests from Florida to Ontario, it was a critical food for Indigenous peoples and Lewis and Clark\'s expedition.",
+    spiritualUses: [
+      "A symbol of the hidden abundance of the North American forest — used in ceremonies to honor the generosity of the land.",
+      "The sweet, tropical fruit shared at councils and celebrations — an offering of joy and unexpected gifts.",
+      "Associated with the mystery of the forest interior — its shade-loving nature connects it to hidden wisdom.",
+      "Planted to attract wildlife and honor the ecosystem in a chain of abundance.",
+    ],
+    scientificBenefits: [
+      "Acetogenins (asimicin, bullatacin) are among the most potent known cytotoxic compounds — active research in oncology.",
+      "Exceptional Vitamin C content supports immune function and collagen synthesis.",
+      "High in riboflavin (B2), niacin (B3), and iron — nutrients often lacking in plant-heavy diets.",
+      "Rich in antioxidant carotenoids and polyphenols that protect cells from oxidative damage.",
+    ],
+    howToUse:
+      "Eat ripe pawpaw fresh out of hand — scoop custard with a spoon. Blend into smoothies or ice cream. Substitute for banana in any baked good. Dry at low temperature for shelf-stable powder.",
+    inStock: false,
+    featured: true,
+    rating: 4.9,
+    reviews: 61,
+    origin: "Eastern Woodlands wild harvest",
+    regions: ["Midwest", "Southeast", "Northeast"],
+  },
+  {
+    id: "serviceberry",
+    name: "Serviceberry (Juneberry)",
+    scientificName: "Amelanchier canadensis",
+    category: "fruit",
+    price: 14.99,
+    unit: "2 oz dried berry",
+    image:
+      "https://images.unsplash.com/photo-1597495655652-2a41b3c24e0e?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Serviceberry small purple-red berries clustered on branch with green leaves",
+    gradient: "from-violet-500 to-indigo-400",
+    emoji: "🫐",
+    tagline: "Spring\'s first berry — blueberry\'s wild woodland cousin.",
+    highlights: [
+      "First fruit of spring — eaten to mark the return of life and vitality after winter.",
+      "Higher antioxidant ORAC score than blueberries — exceptional anthocyanin density.",
+    ],
+    shortDescription:
+      "Spring\'s first wild berry — sweeter than blueberry, packed with antioxidants.",
+    description:
+      "Serviceberry (Amelanchier canadensis) is one of the most beloved wild fruits of the Eastern and Northern forests. Its white blossoms are among the first flowers of spring. The small, sweet fruits are more complex than blueberry, with an almond note from the seeds. Indigenous peoples dried serviceberries into pemmican — their essential preserved travel food.",
+    spiritualUses: [
+      "The first sweet fruit of spring — eaten at the spring equinox to mark the return of abundance and warmth.",
+      "Used in funerary traditions — planted on graves and eaten at memorial meals to honor those who have passed.",
+      "A bird medicine plant — attracts migratory songbirds, associated with song, joy, and the spirit\'s flight.",
+      "Sharing serviceberries at a communal meal is an act of friendship and trust in Eastern Woodland traditions.",
+    ],
+    scientificBenefits: [
+      "Higher anthocyanin density than blueberries — exceptional antioxidant ORAC score for cellular protection.",
+      "Rich in iron (1.17mg/100g) and copper — supports blood health, energy, and connective tissue formation.",
+      "Quercetin and kaempferol flavonoids demonstrate anti-inflammatory and cardioprotective effects.",
+      "Significant Vitamin C content enhances non-heme iron absorption from plant foods.",
+    ],
+    howToUse:
+      "Eat fresh by the handful. Dry into sweet raisins for trail mix. Cook into jam or syrup. Bake into muffins and pies as a direct blueberry substitute with more complex flavor.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 44,
+    origin: "Northeast and Great Lakes wild harvest",
+    regions: ["Northeast", "Midwest", "Great Plains"],
+  },
+  {
+    id: "rose-hips",
+    name: "Rose Hips",
+    scientificName: "Rosa canina",
+    category: "fruit",
+    price: 13.99,
+    unit: "2 oz dried whole hips",
+    image:
+      "https://images.unsplash.com/photo-1598522394192-f38ffb47f3d2?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Rose hips bright red oval fruits on thorny stems after first frost",
+    gradient: "from-red-600 to-orange-500",
+    emoji: "🌹",
+    tagline: "A rose\'s true gift — the ruby jewel that outlasts the flower.",
+    highlights: [
+      "Associated with Venus — the rose\'s true essence distilled into a resilient winter fruit.",
+      "Contains 20x more Vitamin C than oranges — the highest density of any common fruit.",
+    ],
+    shortDescription:
+      "The rose\'s winter fruit — a Vitamin C powerhouse with deep restorative properties.",
+    description:
+      "Rose Hips — the fruit of the Dog Rose (Rosa canina) — ripen after the first frost, rich in Vitamin C (20× more than oranges), carotenoids, flavonoids, and essential fatty acids. During World War II, the British government organized mass harvest of rose hips to replace citrus Vitamin C cut off by German blockades.",
+    spiritualUses: [
+      "The heart of the rose\'s spirit — used in love magic after the bloom fades, symbolizing enduring love.",
+      "Associated with Venus — placed on altars for love, beauty, healing, and the sacred feminine.",
+      "Used in winter protection rituals — their bright red color in the grey season is a symbol of life\'s persistence.",
+      "Ground and worn as a perfumed offering to invoke healing and attract love.",
+    ],
+    scientificBenefits: [
+      "Contains 400–500mg Vitamin C per 100g — 20× more than oranges and among the highest of any food source.",
+      "GOPO (a galactolipid in rose hips) demonstrated significant reduction in osteoarthritis pain in clinical trials.",
+      "Trans-retinoic acid from carotenoids promotes skin cell turnover and reduces wrinkles topically.",
+      "Pectin and malic acid support digestive health, regulate bowel function, and feed beneficial gut bacteria.",
+    ],
+    howToUse:
+      "Brew as a tangy, ruby-red tea (simmer 10 mins to extract Vitamin C). Make rose hip syrup with raw honey. Blend dried hip powder into smoothies. Use in jams for tart flavor and nutrition.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 68,
+    origin: "Local woodland edge wildcrafted (post-frost harvest)",
+    regions: ["Pacific Northwest", "Rocky Mountains", "Northeast", "Midwest"],
+  },
+  {
+    id: "hawthorn-berries",
+    name: "Hawthorn Berries",
+    scientificName: "Crataegus monogyna",
+    category: "fruit",
+    price: 14.99,
+    unit: "2 oz dried berry",
+    image:
+      "https://images.unsplash.com/photo-1601046800248-8f5dd76e0b73?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Hawthorn deep red berries in dense clusters on thorny branches",
+    gradient: "from-red-700 to-red-500",
+    emoji: "❤️",
+    tagline: "The heart tree\'s medicine — thorns that guard deep tenderness.",
+    highlights: [
+      "The faerie tree — where offerings are left at springs and sacred thresholds across Celtic lands.",
+      "Oligomeric proanthocyanidins increase coronary blood flow in multiple clinical trials.",
+    ],
+    shortDescription:
+      "The heart herb of the hedgerow — deeply protective for the physical and emotional heart.",
+    description:
+      "Hawthorn (Crataegus monogyna) is the premier heart herb of Western herbalism — sacred across Celtic Europe as the faerie tree. In modern phytotherapy it is one of the most thoroughly studied herbs for cardiovascular health, with dozens of clinical trials confirming improved blood flow, reduced cardiac inflammation, and improved heart muscle function.",
+    spiritualUses: [
+      "The most sacred faerie tree in the British Isles — solitary hawthorns are protected, offerings tied to their branches.",
+      "The Beltane tree — its white blossoms mark the beginning of summer in the Celtic calendar.",
+      "Used to protect against misfortune — a hawthorn planted near the home guards against lightning and evil.",
+      "The tree of the guarded heart — its thorns remind that the most tender things require the strongest protection.",
+    ],
+    scientificBenefits: [
+      "Oligomeric proanthocyanidins (OPCs) increase coronary blood flow and cardiac output in randomized trials.",
+      "Vitexin and other flavonoids reduce peripheral vascular resistance, effectively lowering blood pressure.",
+      "SPICE trial showed hawthorn extract significantly reduced risk of early death from heart failure.",
+      "Anti-inflammatory quercetin and hyperoside protect endothelial cells lining arteries from oxidative damage.",
+    ],
+    howToUse:
+      "Simmer 1 tbsp dried berries in 2 cups water for 20 minutes for a dark rich heart tonic tea. Add to elderberry syrup. Take consistently for 3+ months for cardiovascular benefit.",
+    inStock: false,
+    featured: false,
+    rating: 4.8,
+    reviews: 55,
+    origin: "Local hedgerow wildcrafted (autumn harvest)",
+    regions: ["Pacific Northwest", "Northeast", "Midwest"],
+  },
+  {
+    id: "persimmon",
+    name: "Wild Persimmon",
+    scientificName: "Diospyros virginiana",
+    category: "fruit",
+    price: 16.99,
+    unit: "2 oz dried fruit slices",
+    image:
+      "https://images.unsplash.com/photo-1587735243475-37dba12f2671?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Wild persimmon glowing orange fruits on bare winter branches",
+    gradient: "from-orange-600 to-amber-400",
+    emoji: "🟠",
+    tagline: "The frost-kissed amber — sweetness earned through patience.",
+    highlights: [
+      "A tree of the sun — its fire-orange fruits offered at Samhain as light in the darkening season.",
+      "Among the highest beta-carotene and betulinic acid content of any North American fruit.",
+    ],
+    shortDescription:
+      "The native orange gem — frost-sweetened wild persimmon, extraordinary in flavor and medicine.",
+    description:
+      "Wild Persimmon (Diospyros virginiana) transforms dramatically after the first frost: the orange fruits soften into a sweet, rich, complex delicacy with notes of honey, cinnamon, and brown sugar. Native to the Southeast and Midwest, it was a vital food for Indigenous peoples. Its unique betulinic acid compounds are of significant research interest in oncology.",
+    spiritualUses: [
+      "A solar fruit that holds the fire of summer into autumn — used in sun ceremonies and as an offering to fire and light.",
+      "Its dramatic transformation from bitter to sweet after frost is a metaphor for patience and the gifts of time.",
+      "Used in divination — Appalachian tradition holds that the seed kernel shape predicts winter severity.",
+      "Planted to honor the land and attract wildlife in ecological restoration ceremony.",
+    ],
+    scientificBenefits: [
+      "Among the highest beta-carotene density of any North American fruit — exceptional for eye health and immunity.",
+      "Betulinic acid demonstrates significant apoptotic activity against melanoma and neuroblastoma cell lines.",
+      "High in catechins and proanthocyanidins — antioxidant protection for vascular tissue.",
+      "Significant Vitamin C, potassium, and dietary fiber supporting immune, cardiovascular, and digestive health.",
+    ],
+    howToUse:
+      "Only eat after frost or when fully soft — never unripe. Blend into pudding with vanilla, or dry into persimmon leather. Add dried slices to oatmeal. Make into traditional persimmon bread.",
+    inStock: false,
+    featured: false,
+    rating: 4.7,
+    reviews: 38,
+    origin: "Southeast and Midwest wild harvest (post-frost)",
+    regions: ["Southeast", "Midwest", "Great Plains"],
+  },
+  {
+    id: "gooseberry",
+    name: "Gooseberry",
+    scientificName: "Ribes uva-crispa",
+    category: "fruit",
+    price: 13.99,
+    unit: "2 oz dried berry",
+    image:
+      "https://images.unsplash.com/photo-1597865554780-a3a0ece7e72a?w=600&auto=format&fit=crop&q=80",
+    imageAlt: "Gooseberry translucent green and red berries with striped skin on bush",
+    gradient: "from-lime-500 to-green-500",
+    emoji: "��",
+    tagline: "Tart ancestral jewels — the sharp medicine of the hedgerow.",
+    highlights: [
+      "A fairy hedge fruit — planted to guard crossroads and boundaries in British folklore.",
+      "Exceptionally rich in pectin, Vitamin C, and quercetin for gut and vascular health.",
+    ],
+    shortDescription:
+      "The bold, tart hedgerow berry — ancestral food with exceptional gut and immune benefits.",
+    description:
+      "Gooseberry (Ribes uva-crispa) is one of Europe\'s most beloved wild hedge fruits — eaten fresh, preserved in jams, and fermented into wine across the British Isles and Scandinavia. The fruits are exceptionally high in pectin, making them ideal for jam-making, and contain extraordinary concentrations of Vitamin C, quercetin, and other flavonoids.",
+    spiritualUses: [
+      "A fairy hedge plant — planted at boundaries, crossroads, and thresholds to guard and define sacred space.",
+      "The tart berry used in folk medicine and magic to cut through illusions, lies, and confusion.",
+      "Eaten in midsummer celebrations in Britain and Scandinavia — a first-fruits offering of the garden season.",
+      "Associated with the protective, sharp-tongued wisdom of elder women in European folk tradition.",
+    ],
+    scientificBenefits: [
+      "Among the highest pectin content of any fruit — gel-forming fiber that feeds Lactobacillus and reduces LDL.",
+      "Exceptionally rich in quercetin — among the highest flavonoid content in the Ribes family.",
+      "Vitamin C content (28mg/100g) supports immune function, collagen synthesis, and antioxidant defense.",
+      "Tannins provide astringent antimicrobial action in the gut — used for diarrhea and intestinal inflammation.",
+    ],
+    howToUse:
+      "Cook into jam, syrup, or compote. Blend into shrubs (drinking vinegars) for a health tonic. Add to fruit crumbles and pies. Ferment into gooseberry wine. Dried berries brew into a tart nutritious tea.",
+    inStock: false,
+    featured: false,
+    rating: 4.5,
+    reviews: 33,
+    origin: "Pacific Northwest and Northeast local harvest",
+    regions: ["Pacific Northwest", "Northeast", "Midwest"],
+  },
+
+];
 export const featuredProducts = products.filter((p) => p.featured);
 
 export const getProductById = (id: string): Product | undefined =>
@@ -935,5 +1910,12 @@ export const categoryMeta: Record<
     bg: "bg-teal-100",
     emoji: "🥦",
     description: "Native edibles straight from forested lands",
+  },
+  fruit: {
+    label: "Fruits",
+    color: "text-rose-800",
+    bg: "bg-rose-100",
+    emoji: "🍒",
+    description: "Wild and native fruits ripe with flavor and medicine",
   },
 };

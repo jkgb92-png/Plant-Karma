@@ -17,6 +17,8 @@ export default function Header() {
     { href: "/shop?category=weed", label: "Wild Weeds" },
     { href: "/shop?category=nut", label: "Nuts" },
     { href: "/shop?category=vegetable", label: "Vegetables" },
+    { href: "/shop?category=fruit", label: "Fruits" },
+    { href: "/regions", label: "Regions" },
   ];
 
   const isActive = (href: string) =>
