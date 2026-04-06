@@ -224,6 +224,26 @@ export default async function ProductDetailPage({
                 </span>
               ))}
             </div>
+
+            {/* Native Regions */}
+            {product.regions && product.regions.length > 0 && (
+              <div className="mt-5">
+                <p className="text-[11px] font-semibold text-stone-400 uppercase tracking-wide mb-2">
+                  🗺 Native Regions
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {product.regions.map((region) => (
+                    <Link
+                      key={region}
+                      href={`/regions`}
+                      className="rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs text-emerald-800 font-medium hover:bg-moss hover:text-white hover:border-moss transition-all"
+                    >
+                      {region}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

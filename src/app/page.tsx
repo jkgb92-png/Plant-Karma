@@ -11,7 +11,7 @@ export default function HomePage() {
   ][];
 
   const stats = [
-    { value: "15+", label: "Native Species" },
+    { value: `${products.length}+`, label: "Native Species" },
     { value: "100%", label: "Locally Sourced" },
     { value: "0", label: "Synthetics" },
     { value: "∞", label: "Earth Karma" },
@@ -223,6 +223,56 @@ export default function HomePage() {
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Explore by Region ── */}
+      <section className="py-20 bg-cream">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-serif text-4xl font-bold text-forest mb-3">
+              Explore by Region
+            </h2>
+            <p className="text-stone-500 max-w-xl mx-auto">
+              Plants grow where the land calls them. Discover native species by
+              their home territory.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { region: "Pacific Northwest", emoji: "🌲", bg: "from-emerald-700 to-emerald-500", desc: "Rainforests & coastal herbs" },
+              { region: "Midwest", emoji: "🌻", bg: "from-yellow-700 to-amber-500", desc: "Woodland edges & bottomland" },
+              { region: "Southeast", emoji: "🌴", bg: "from-green-700 to-teal-500", desc: "Subtropical natives & swamps" },
+              { region: "Northeast", emoji: "🍂", bg: "from-red-700 to-orange-500", desc: "Deciduous forest gems" },
+            ].map(({ region, emoji, bg, desc }) => (
+              <Link
+                key={region}
+                href={`/regions`}
+                className={`group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br ${bg} p-6 flex flex-col justify-between min-h-[160px]`}
+              >
+                <span className="text-4xl">{emoji}</span>
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-white leading-snug">
+                    {region}
+                  </h3>
+                  <p className="text-white/70 text-xs mt-0.5 leading-snug hidden sm:block">
+                    {desc}
+                  </p>
+                </div>
+                <div className="absolute bottom-3 right-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-bold group-hover:bg-white/40 transition-colors">
+                  →
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link
+              href="/regions"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-moss px-5 py-2 text-sm font-semibold text-moss hover:bg-moss hover:text-white transition-all"
+            >
+              🗺 View All 8 Regions
+            </Link>
           </div>
         </div>
       </section>

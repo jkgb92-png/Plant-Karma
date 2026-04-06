@@ -120,6 +120,14 @@ export default function ProductCard({ product }: ProductCardProps) {
             <span className="line-clamp-1">{product.origin}</span>
           </p>
 
+          {/* Region tag */}
+          {product.regions && product.regions.length > 0 && (
+            <p className="mt-1 text-xs text-stone-400 flex items-center gap-1">
+              <span>🗺</span>
+              <span className="line-clamp-1">{product.regions[0]}</span>
+            </p>
+          )}
+
           {/* Short description */}
           <p className="mt-2 text-sm text-stone-600 leading-relaxed line-clamp-2 flex-1">
             {product.shortDescription}
