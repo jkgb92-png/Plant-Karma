@@ -271,7 +271,7 @@ export const products: Product[] = [
     lookalikes: [
       {
         name: "Common Foxglove (Digitalis purpurea)",
-        warning: "DANGEROUS: Foxglove first-year rosette has large basal leaves but they are smoother, less furry, distinctly toothed, and slightly sticky — foxglove is DEADLY TOXIC if eaten. Always confirm the velvet softness and grey-green colour before harvesting mullein.",
+        warning: "DANGEROUS: Foxglove first-year rosette has large basal leaves but they are smoother, less furry, distinctly toothed, and slightly sticky — foxglove is DEADLY TOXIC if eaten. Always confirm the velvet softness and grey-green color before harvesting mullein.",
       },
     ],
   },
