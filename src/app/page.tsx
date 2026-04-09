@@ -119,7 +119,7 @@ export default function HomePage() {
           <div className="hidden lg:block relative h-[520px]">
             <div className="absolute top-0 right-0 h-80 w-64 rounded-3xl overflow-hidden shadow-2xl ring-2 ring-white/20">
               <Image
-                src="https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=400&auto=format&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&auto=format&fit=crop&q=80"
                 alt="Native herbs"
                 fill
                 className="object-cover"
@@ -138,7 +138,7 @@ export default function HomePage() {
             </div>
             <div className="absolute top-1/4 left-1/4 h-64 w-52 rounded-3xl overflow-hidden shadow-2xl ring-2 ring-white/20">
               <Image
-                src="https://images.unsplash.com/photo-1531217040651-e7a8f6bde316?w=400&auto=format&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1586535715088-6f42874c9b1b?w=400&auto=format&fit=crop&q=80"
                 alt="Wild dandelion"
                 fill
                 className="object-cover"

@@ -36,7 +36,7 @@ export const products: Product[] = [
     price: 18.99,
     unit: "2 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1518531933037-4dbf045f1842?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1580822416068-a2a901d09068?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Fresh green moringa leaves on branch",
     gradient: "from-emerald-700 to-emerald-500",
     emoji: "🌿",
@@ -79,7 +79,7 @@ export const products: Product[] = [
     price: 12.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1604137040022-90091705d053?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Holy basil tulsi plant with purple-green leaves",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
@@ -384,7 +384,7 @@ export const products: Product[] = [
     price: 8.99,
     unit: "2 oz dried blend",
     image:
-      "https://images.unsplash.com/photo-1531217040651-e7a8f6bde316?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1586535715088-6f42874c9b1b?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Dandelion seed head in a sunny meadow ready to release seeds",
     gradient: "from-yellow-500 to-green-500",
     emoji: "🌼",
@@ -989,7 +989,7 @@ export const products: Product[] = [
     price: 12.99,
     unit: "2 oz dried root",
     image:
-      "https://images.unsplash.com/photo-1629621518651-5f95428cb6e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1618556819263-9c7c533b4c34?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Burdock large basal leaves with dark brown burr seed heads",
     gradient: "from-stone-700 to-amber-700",
     emoji: "🌱",
@@ -1031,7 +1031,7 @@ export const products: Product[] = [
     price: 13.99,
     unit: "1.5 oz dried flower & bud",
     image:
-      "https://images.unsplash.com/photo-1597860963770-b7b9b517d2e4?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1574773228580-9d2ec69b6f4e?w=600&auto=format&fit=crop&q=80",
     imageAlt: "St. John's Wort bright yellow flowers with translucent dotted petals",
     gradient: "from-yellow-500 to-orange-400",
     emoji: "☀️",
@@ -1115,7 +1115,7 @@ export const products: Product[] = [
     price: 14.99,
     unit: "1 oz dried leaf & flower",
     image:
-      "https://images.unsplash.com/photo-1597876659237-58a46a23d17e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Mugwort silvery-green leaves with white undersides in tall stand",
     gradient: "from-stone-600 to-emerald-600",
     emoji: "🌙",
@@ -1369,7 +1369,7 @@ export const products: Product[] = [
     price: 18.99,
     unit: "2 oz dried root powder",
     image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Ashwagandha dried root powder in a wooden bowl with whole roots",
     gradient: "from-amber-600 to-orange-500",
     emoji: "🌰",
