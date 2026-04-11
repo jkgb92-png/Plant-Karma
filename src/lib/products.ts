@@ -36,7 +36,7 @@ export const products: Product[] = [
     price: 18.99,
     unit: "2 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1580822416068-a2a901d09068?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1698414580212-fc3842c3eac8?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Fresh green moringa leaves on branch",
     gradient: "from-emerald-700 to-emerald-500",
     emoji: "🌿",
@@ -79,7 +79,7 @@ export const products: Product[] = [
     price: 12.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1604137040022-90091705d053?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1563791584609-11f1fae77dc4?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Holy basil tulsi plant with purple-green leaves",
     gradient: "from-emerald-700 to-lime-500",
     emoji: "🌱",
@@ -122,7 +122,7 @@ export const products: Product[] = [
     price: 9.99,
     unit: "1 oz dried sprig",
     image:
-      "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Wild rosemary sprigs with needle-like aromatic leaves",
     gradient: "from-teal-700 to-emerald-500",
     emoji: "🌾",
@@ -165,7 +165,7 @@ export const products: Product[] = [
     price: 11.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1628689469838-524a4a973b8e?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Lemon balm bright green leaves with citrus fragrance",
     gradient: "from-lime-600 to-yellow-400",
     emoji: "🍋",
@@ -384,7 +384,7 @@ export const products: Product[] = [
     price: 8.99,
     unit: "2 oz dried blend",
     image:
-      "https://images.unsplash.com/photo-1586535715088-6f42874c9b1b?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558263756-22ba4de71e75?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Dandelion seed head in a sunny meadow ready to release seeds",
     gradient: "from-yellow-500 to-green-500",
     emoji: "🌼",
@@ -427,7 +427,7 @@ export const products: Product[] = [
     price: 10.99,
     unit: "2 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Stinging nettle plant with serrated leaves in spring growth",
     gradient: "from-green-600 to-emerald-400",
     emoji: "🌿",
@@ -731,7 +731,7 @@ export const products: Product[] = [
     price: 13.99,
     unit: "1.5 oz dried leaf & flower",
     image:
-      "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1597576043567-4f37de12ec79?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Passionflower intricate purple and white bloom on vine",
     gradient: "from-violet-700 to-purple-500",
     emoji: "🌸",
@@ -905,7 +905,7 @@ export const products: Product[] = [
     price: 11.99,
     unit: "1.5 oz dried herb",
     image:
-      "https://images.unsplash.com/photo-1597328125219-1c91d3d1e2b7?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Yarrow flat-topped white flower clusters with feathery leaves",
     gradient: "from-stone-400 to-white",
     emoji: "🌸",
@@ -989,7 +989,7 @@ export const products: Product[] = [
     price: 12.99,
     unit: "2 oz dried root",
     image:
-      "https://images.unsplash.com/photo-1618556819263-9c7c533b4c34?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Burdock large basal leaves with dark brown burr seed heads",
     gradient: "from-stone-700 to-amber-700",
     emoji: "🌱",
@@ -1031,7 +1031,7 @@ export const products: Product[] = [
     price: 13.99,
     unit: "1.5 oz dried flower & bud",
     image:
-      "https://images.unsplash.com/photo-1574773228580-9d2ec69b6f4e?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1605021890665-90d3dba3b76d?w=600&auto=format&fit=crop&q=80",
     imageAlt: "St. John's Wort bright yellow flowers with translucent dotted petals",
     gradient: "from-yellow-500 to-orange-400",
     emoji: "☀️",
@@ -1285,7 +1285,7 @@ export const products: Product[] = [
     price: 10.99,
     unit: "1 oz dried flower",
     image:
-      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Chamomile white daisy flowers with yellow centers in a sunny field",
     gradient: "from-yellow-400 to-amber-300",
     emoji: "🌼",
@@ -1327,7 +1327,7 @@ export const products: Product[] = [
     price: 16.99,
     unit: "1.5 oz dried root & herb",
     image:
-      "https://images.unsplash.com/photo-1597858520171-563a8e8b9925?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Echinacea purple coneflower with spiky orange-brown seed cone center",
     gradient: "from-pink-600 to-purple-500",
     emoji: "🌸",
@@ -1369,7 +1369,7 @@ export const products: Product[] = [
     price: 18.99,
     unit: "2 oz dried root powder",
     image:
-      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1618176729938-6fd80fe21dba?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Ashwagandha dried root powder in a wooden bowl with whole roots",
     gradient: "from-amber-600 to-orange-500",
     emoji: "🌰",
@@ -1411,7 +1411,7 @@ export const products: Product[] = [
     price: 9.99,
     unit: "1.5 oz dried leaf",
     image:
-      "https://images.unsplash.com/photo-1628357784840-f78b41ea4ade?w=600&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1628202926206-c63a34b2807c?w=600&auto=format&fit=crop&q=80",
     imageAlt: "Spearmint fresh bright green pointed leaves close-up with water drops",
     gradient: "from-emerald-500 to-cyan-400",
     emoji: "🌿",
